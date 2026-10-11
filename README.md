@@ -22,13 +22,13 @@ https://altstore.chi.qzz.io
 
 <!-- AUTO-UPDATE-STATUS:START -->
 ## 更新狀態
-- **最近自動檢查：** 2026-10-12 01:19:53（台灣時間）
-- **最近內容更新：** 2026-10-10 23:42:15（台灣時間）
+- **最近自動檢查：** 2026-10-12 05:29:08（台灣時間）
+- **最近內容更新：** 2026-10-12 05:29:08（台灣時間）
 
 | App | 狀態 | 最新版本 | 版本日期 |
 | --- | --- | --- | --- |
 | PiliPlus | ⚪ Unchanged | 2.1.6.2 | 2026-10-10 |
-| YTKACE | ⚪ Unchanged | 21.40.5 | 2026-10-04 |
+| YTKACE | 🟢 Updated | 21.41.5 | 2026-10-11 |
 | MaxMusic | ⚪ Unchanged | 9.34.4 | 2026-08-30 |
 | Facebook | ⚪ Unchanged | 570.0.0 | 2026-07-22 |
 | Threads | ⚪ Unchanged | 437.0.0 | 2026-07-07 |
@@ -38,5 +38,5 @@ https://altstore.chi.qzz.io
 <!-- AUTO-UPDATE-STATUS:END -->
 
 <!-- AUTO-UPDATE-STATUS-TIMES:START -->
-<!-- {} -->
+<!-- {"YTKACE": "2026-10-12 05:29:08"} -->
 <!-- AUTO-UPDATE-STATUS-TIMES:END -->
