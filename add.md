@@ -20,7 +20,7 @@
 | **Twitch** | Moe TwitchControl／Tweach 31.5（10/08）；IPA Vault Twitch 31.4（9/29） | Moe 版本較新，更新日期也較晚 | **Moe Twitch 31.5** |
 | **Infuse** | IPA Vault Infuse Plus 8.5.7（10/13）；Moe Infuse Plus 8.5.6（9/30） | IPA Vault 本體版本較新，更新日期較晚 | **IPA Vault Infuse Plus 8.5.7** |
 | **Google Photos** | IPA Vault Gunshot 7.20.2、7.44.0、7.96.0（均標示 10/09） | 同一修改功能的不同本體版本，7.96.0 最新 | **Google Photos Gunshot 7.96.0**，除非需要舊版 iOS 相容性 |
-| **PiliPlus** | 自有 Chi Source 2.1.6.2（10/10）；AltGallery 2.1.6（build 5472，10/10） | 更新日期相同，版本標記不同，可能是不同打包方式 | **先保留自有 2.1.6.2**，避免同一功能重複收錄 |
+| **PiliPlus** | 自有 Chi Source 2.1.6.2（10/10）；AltGallery 2.1.6（build 5472，10/10） | 更新日期相同，版本標記不同，可能是不同打包方式 | **你選定：自有 Chi Source PiliPlus 2.1.6.2** |
 | **Animeko** | 自有 Chi Source Personal 6.3.0（10/13）；AltGallery 6.3.0（10/13） | 版本與更新日期相同 | **自有 Animeko** |
 | **Kazumi** | 自有 Chi Source Personal 2.3.8（10/07）；AltGallery 2.3.8（10/07） | 版本與更新日期相同 | **自有 Kazumi** |
 | **Aidoku** | 自有 Chi Source Personal 0.9（9/03）；AltGallery 0.9（9/03） | 版本與更新日期相同 | **自有 Aidoku** |
