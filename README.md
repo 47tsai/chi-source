@@ -13,7 +13,13 @@ https://altstore.chi.qzz.io
 
 | App | 原倉庫 | 上次更新 |
 | --- | --- | --- |
-| 自動更新產生 | 自動更新產生 | 自動更新產生 |
+| **[PiliPlus](https://github.com/bggRGjQaUbCoE/PiliPlus)** | bggRGjQaUbCoE | 2026-10-10 |
+| **[YTKACE](https://github.com/itzzace/ytkace)** | itzzace | 2026-10-11 |
+| **[MaxMusic](https://github.com/Mark02-2012/YTMUltimatePLUS)** | Mark02-2012 | 2026-08-30 |
+| **[Facebook](https://github.com/927tx/IPA-Vault)** | IPA Vault | 🟢 **2026-10-14 18:37:24** |
+| **[Threads](https://github.com/927tx/IPA-Vault)** | IPA Vault | 🟢 **2026-10-14 18:37:24** |
+| **[Instagram](https://github.com/apptesters-org/AppTesters_Repo)** | AppTesters | 2026-06-10 |
+| **[EeveeSpotify Reincarnated](https://github.com/SideloadLabs/SideloasLabs-AltSource)** | SideloadLabs | 2026-10-05 |
 <!-- AUTO-UPDATE-APPS:END -->
 
 <!-- AUTO-UPDATE-STATUS:START -->
