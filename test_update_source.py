@@ -434,7 +434,7 @@ def test_update_readme_refreshes_generated_app_table(tmp_path, monkeypatch):
     assert "[Facebook](https://github.com/927tx/IPA-Vault)" in content
     assert "[Threads](https://github.com/927tx/IPA-Vault)" in content
     assert "| IPA Vault |" in content
-    assert "| **[Facebook](https://github.com/927tx/IPA-Vault)** | IPA Vault | Updated | 582.0.0 | 2026-10-09 |" in content
+    assert "| **[Facebook](https://github.com/927tx/IPA-Vault)** | IPA Vault | **Updated** | 582.0.0 | 2026-10-09 |" in content
     assert "## Apps 更新狀態" in content
     assert "| App | 原倉庫 | 狀態 | 最新版本 | 版本日期 | 上次更新 |" in content
     assert "<!-- AUTO-UPDATE-STATUS:START -->" not in content

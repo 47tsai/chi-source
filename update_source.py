@@ -369,7 +369,10 @@ def update_readme(apps, checked_at, content_updated_at, statuses, status_times):
         author, url = get_app_meta(name)
         app_link = f"[{name}]({url})" if url else name
         latest = (app.get("versions") or [{}])[0]
-        rows.append(f"| **{app_link}** | {author} | {statuses.get(name, '⚪ Unchanged')} | {latest.get('version', 'N/A')} | {latest.get('date', 'N/A')} | {format_app_update_time(app, status_times, checked_at)} |")
+        status = statuses.get(name, "Unchanged")
+        if status == "Updated":
+            status = "**Updated**"
+        rows.append(f"| **{app_link}** | {author} | {status} | {latest.get('version', 'N/A')} | {latest.get('date', 'N/A')} | {format_app_update_time(app, status_times, checked_at)} |")
     app_table = "\n".join([
         APP_TABLE_START,
         "## Apps 更新狀態",
@@ -512,7 +515,7 @@ def main():
             statuses[name] = "Updated"
             status_times[name] = checked_at
         elif previous_status_times.get(name) and is_updated_within_day(previous_status_times[name], checked_at):
-            statuses[name] = "🟢 Updated"
+            statuses[name] = "Updated"
             status_times[name] = previous_status_times[name]
         else:
             statuses[name] = "Unchanged"
