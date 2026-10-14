@@ -15,8 +15,8 @@ https://altstore.chi.qzz.io
 | **[PiliPlus](https://github.com/bggRGjQaUbCoE/PiliPlus)** | 2026-10-05 |
 | **[YTKACE](https://github.com/itzzace/ytkace)** | 2026-10-04 |
 | **[MaxMusic](https://github.com/Mark02-2012/MaxMusic)** | 2026-08-30 |
-| **[Facebook](https://github.com/apptesters-org/AppTesters_Repo)** | 2026-07-22 |
-| **[Threads](https://github.com/apptesters-org/AppTesters_Repo)** | 2026-07-07 |
+| **[Facebook](https://github.com/927tx/IPA-Vault)** | 2026-07-22 |
+| **[Threads](https://github.com/927tx/IPA-Vault)** | 2026-07-07 |
 | **[Instagram](https://github.com/apptesters-org/AppTesters_Repo)** | 2026-06-10 |
 | **[EeveeSpotify Reincarnated](https://github.com/SideloadLabs/SideloasLabs-AltSource)** | 2026-10-05 |
 
