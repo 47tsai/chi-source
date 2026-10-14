@@ -79,40 +79,40 @@
     {
       "name": "Facebook",
       "bundleIdentifier": "com.facebook.Facebook",
-      "developerName": "AppTesters",
-      "subtitle": "AppTesters（2026-07-22）",
-      "localizedDescription": "Injected with Premium",
-      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.facebook.Facebook.png",
+      "developerName": "IPA Vault",
+      "subtitle": "IPA Vault（2026-10-09）",
+      "localizedDescription": "Facebook 582.0.0 with iQFace 1.2",
+      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Facebook-Icons/Facebook-AppStore-1024x1024.png",
       "tintColor": "78A5E3",
       "category": "social",
       "screenshots": [],
       "versions": [
         {
-          "version": "570.0.0",
-          "date": "2026-07-22",
-          "localizedDescription": "Injected with Premium",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-07-2026/Facebook_570.0.0_Premium_%40thisismanpreets_apptesters.org.ipa",
-          "size": 198238456
+          "version": "582.0.0",
+          "date": "2026-10-09",
+          "localizedDescription": "IPA Vault build for Facebook (iQFace), version 582.0.0",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Facebook-582.0.0-iQFace.ipa",
+          "size": 234797502
         }
       ]
     },
     {
       "name": "Threads",
       "bundleIdentifier": "com.burbn.barcelona",
-      "developerName": "AppTesters",
-      "subtitle": "AppTesters（2026-07-07）",
-      "localizedDescription": "Injected with Premium",
-      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.burbn.barcelona.png",
+      "developerName": "IPA Vault",
+      "subtitle": "IPA Vault（2026-10-13）",
+      "localizedDescription": "Threads 451.0 with ThreadSaver",
+      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Threads-Icons/Threads-AppStore-1024x1024.png",
       "tintColor": "858585",
       "category": "social",
       "screenshots": [],
       "versions": [
         {
-          "version": "437.0.0",
-          "date": "2026-07-07",
-          "localizedDescription": "Injected with Premium",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-07-2026/Threads_437.0.0_Premium_%40thisismanpreets_apptesters.org.ipa",
-          "size": 96182135
+          "version": "451.0",
+          "date": "2026-10-13",
+          "localizedDescription": "IPA Vault build for Threads (ThreadSaver), version 451.0",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Threads-451.0-ThreadSaver.ipa",
+          "size": 112995145
         }
       ]
     },
