@@ -261,7 +261,7 @@ def build_from_sideloadlabs(apps):
         "bundleIdentifier": match["bundleIdentifier"],
         "developerName": match.get("developerName", "SideloadLabs"),
         "subtitle": format_app_subtitle(match.get("developerName", "SideloadLabs"), match.get("versionDate", "")),
-        "localizedDescription": match.get("localizedDescription", ""),
+        "localizedDescription": match.get("localizedDescription") or latest.get("localizedDescription") or f"{target_name} app",
         "iconURL": match.get("iconURL"),
         "tintColor": "669878",
         "category": "entertainment",
