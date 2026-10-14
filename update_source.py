@@ -355,7 +355,7 @@ def format_app_update_time(app, status_times, checked_at):
     name = app.get("name", "Unknown")
     exact_time = status_times.get(name)
     if exact_time and is_updated_within_day(exact_time, checked_at):
-        return f"🟢 **{exact_time}**"
+        return f"**{exact_time}**"
     date = ((app.get("versions") or [{}])[0]).get("date", "N/A")
     return date or "N/A"
 
@@ -509,13 +509,13 @@ def main():
         new_ver = get_version(app)
         old_ver = get_version(old) if old else None
         if old_ver != new_ver:
-            statuses[name] = "🟢 Updated"
+            statuses[name] = "Updated"
             status_times[name] = checked_at
         elif previous_status_times.get(name) and is_updated_within_day(previous_status_times[name], checked_at):
             statuses[name] = "🟢 Updated"
             status_times[name] = previous_status_times[name]
         else:
-            statuses[name] = "⚪ Unchanged"
+            statuses[name] = "Unchanged"
     update_readme(apps, checked_at, content_updated_at, statuses, status_times)
 
 
