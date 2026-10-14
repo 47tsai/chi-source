@@ -32,37 +32,20 @@
 |---|---|---|---|
 | Carrot | 6.5 | 2026-03-26 | Carrot 6.5 Pro Moe with Working Widgets for iOS, listed on Moe's App Hub with version, file size, and install details. L... |
 | Webssh | 33.0 | 2026-09-30 | Webssh 33.0 Pro for iOS. |
-| MoeReddit | 2026.41.0 (4.6.1) | 2026-10-13 | Hold down with 3 fingers to open moemod menu |
-| Infuse (Moe Plus) | 8.5.6 (2.6) | 2026-09-30 | Infuse 8.5.6 2.6 Moe Plus for iOS. |
-| Infuse (Plus 2.5) | 8.4.2 (2.5) | 2026-04-10 | Infuse 8.4.2 Plus 2.5 for iOS, listed on Moe's App Hub with version, file size, and install details. Linked App Store identity: Infuse in Entertainment. |
-| Twitch | 24.2.4 | 2025-09-20 | Twitch is an iOS release entry for Twitch: Live Streaming on Moe's App Hub, with version, file size, icon, and install details. |
-| Twitch (Adfree, Moe Control) | 29.0 (0.0.2) | 2026-04-17 | hold down with 3 fingers for 4 seconds to open the mod menu |
-| Twitch (Tweach) | 29.0 (2.3.1) | 2026-04-17 | Twitch 29.0 Tweach 2.3.1 is an iOS release entry for Twitch: Live Streaming on Moe's App Hub, with version, file size, icon, and install details. |
-| Twitch (Moe TwitchControl) | 31.5 (0.0.6) | 2026-10-08 | for adblock to work, open mod menu, and import the file you download from https://tinyurl.com/3n9sz6mv into the mods set... |
-| Twitch (Twitchv, Moe Tweach) | 31.5 (2.4.1) | 2026-10-08 | Twitch 31.5 Tweach 2.4.1 for iOS. |
 
 ## IPA Vault
 
 | App | 版本 | 最後更新時間 | 功能簡介 |
 |---|---|---|---|
 | Discord (RainTweak) | 349.0 | 2026-10-13 | Discord 349.0 with RainTweak 0.10.0 |
-| Google Photos (Gunshot) (iOS 16.1+) | 7.20.2 | 2026-10-09 | Google Photos 7.20.2 with Gunshot 0.3.0 (iOS 16.1+) |
-| Google Photos (Gunshot) (iOS 17+) | 7.44.0 | 2026-10-09 | Google Photos 7.44.0 with Gunshot 0.3.0 (iOS 17+) |
-| Google Photos (Gunshot) | 7.96.0 | 2026-10-09 | Google Photos 7.96.0 with Gunshot 0.3.0 |
 | iMe (MxGram) | 12.8.1 | 2026-09-01 | iMe 12.8.1 with MxGram 1.0.0 |
 | iMe (iQTele) | 12.8.1 | 2026-09-05 | iMe 12.8.1 with iQTele 1.2 |
-| Infuse Plus (7.8.4) | 7.8.4 | 2026-09-01 | Infuse 7.8.4 with Infuse Plus 2.6 |
-| Infuse Plus (8.2.4) | 8.2.4 | 2026-09-01 | Infuse 8.2.4 with Infuse Plus 2.6 |
-| Infuse Plus (8.5.7) | 8.5.7 | 2026-10-13 | Infuse 8.5.7 with Infuse Plus 2.6 |
-| Husk | 1.1.0 | 2026-10-09 | Husk 1.1.0 |
 | Messenger (Flow) | 582.0.0 | 2026-10-07 | Messenger 582.0.0 with Flow 1.0 |
 | Messenger (Login) | 523.0.0 | 2026-09-01 | Messenger 523.0.0 login build |
 | Messenger (MSGPlusX) | 582.0.0 | 2026-10-07 | Messenger 582.0.0 with MSGPlusX 1.1 |
 | Nagram (MxGram) | 13.0.1 | 2026-10-13 | Nagram 13.0.1 with MxGram 1.0.0 |
 | Nagram (iQTele) | 13.0.1 | 2026-10-13 | Nagram 13.0.1 with iQTele 1.4 |
 | Nagram (TGExtra) | 13.0.1 | 2026-10-13 | Nagram 13.0.1 with TGExtra 1.7.7 |
-| Reddit (Login) | 2024.12.0 | 2026-09-01 | Reddit 2024.12.0 login build |
-| Reddit (RedditFilter) | 2026.41.0 | 2026-10-13 | Reddit 2026.41.0 with RedditFilter 4.6.1 |
 | SoundCloud (NexaSC) (iOS 16.0-16.3) | 7.68.1 | 2026-09-01 | SoundCloud 7.68.1 with NexaSC beta 4 |
 | SoundCloud (NexaSC) | 8.82.0 | 2026-10-11 | SoundCloud 8.82.0 with NexaSC beta 4 |
 | Swiftgram (MxGram) | 13.0 | 2026-10-13 | Swiftgram 13.0 with MxGram 1.0.0 |
@@ -71,27 +54,16 @@
 | Telegram (MxGram) | 13.0 | 2026-10-09 | Telegram 13.0 with MxGram 1.0.0 |
 | Telegram (iQTele) | 13.0 | 2026-10-09 | Telegram 13.0 with iQTele 1.4 |
 | Telegram (TGExtra) | 13.0 | 2026-10-09 | Telegram 13.0 with TGExtra 1.7.8 |
-| Spotify (EeveeSpotify) | 9.1.90 | 2026-10-08 | Spotify 9.1.90 with EeveeSpotify 7.0.0 |
-| Spotify (EeveeSpotify) (No Plugins) | 9.1.90 | 2026-10-08 | Spotify 9.1.90 with EeveeSpotify 7.0.0 (No Plugins) |
-| Spotify (Vitrine) | 9.1.90 | 2026-10-13 | Spotify 9.1.90 with Vitrine 1.0.0-b13 |
-| Spotify (Vitrine) (No Plugins) | 9.1.90 | 2026-10-13 | Spotify 9.1.90 with Vitrine 1.0.0-b13 (No Plugins) |
-| Spotify (Eevee + Chroma) (9.1.78) | 9.1.78 | 2026-10-05 | Spotify 9.1.78 with EeveeSpotify 7.0.0 + Chroma.pw 0.50.0 |
-| Spotify (Eevee + Chroma) (9.1.78) (No Plugins) | 9.1.78 | 2026-10-05 | Spotify 9.1.78 with EeveeSpotify 7.0.0 + Chroma.pw 0.50.0 (No Plugins) |
 | TikTok (Infinitok) | 47.1.0 | 2026-10-07 | TikTok 47.1.0 with Infinitok 0.0.2 |
 | Turrit (MxGram) | 1.5.5 | 2026-10-09 | Turrit 1.5.5 with MxGram 1.0.0 |
 | Turrit (iQTele) | 1.5.5 | 2026-10-09 | Turrit 1.5.5 with iQTele 1.4 |
 | Turrit (TGExtra) | 1.5.5 | 2026-10-09 | Turrit 1.5.5 with TGExtra 1.7.7 |
-| TwitchUnblock | 1.3.0 | 2026-10-11 | TwitchUnblock 1.3.0 |
-| Twitch | 31.4 | 2026-09-29 | Twitch 31.4 with Tweach 2.4.1 + Twitch Control 0.0.6 |
-| Twitch (Glass) | 31.4 | 2026-09-29 | Twitch 31.4 with Tweach 2.4.1 + Twitch Control 0.0.6 (Glass) |
 | Twitter NFB | 12.33 | 2026-10-11 | Twitter 12.33 with NFB 7.1.1 |
 | Twitter NFB + TWI | 12.33 | 2026-10-11 | Twitter 12.33 with NFB 7.1.1 + TWIGalaxy 1.14 |
 | X NFB | 12.33 | 2026-10-11 | X 12.33 with NFB 7.1.1 |
 | X NFB + TWI | 12.33 | 2026-10-11 | X 12.33 with NFB 7.1.1 + TWIGalaxy 1.14 |
 | YTMUltimate+ | 9.41.2 | 2026-10-11 | YouTube Music 9.41.2 with YTMUltimate+ 2.4.1  Added Tweaks: YTMABConfig, YouMusicPIP, VolumeBoostYT, ReturnYouTubeMusicDislike |
 | YTMUltimate+ (No PiP) | 9.41.2 | 2026-10-11 | YouTube Music 9.41.2 with YTMUltimate+ 2.4.1 (No PiP)  Added Tweaks: YTMABConfig, VolumeBoostYT, ReturnYouTubeMusicDislike |
-| Spotify (Taurus) | 9.1.78 | 2026-10-09 | Spotify 9.1.78 with Taurus 0.50.1 |
-| Spotify (Taurus) (No Plugins) | 9.1.78 | 2026-10-09 | Spotify 9.1.78 with Taurus 0.50.1 (No Plugins) |
 
 ## AltGallery
 
@@ -99,14 +71,12 @@
 |---|---|---|---|
 | AniBaka | 5.2.1（build 1007） | 2026-10-07 | AniBaka 是一个基于 Flutter 的跨平台番剧聚合与媒体播放客户端，支持多番剧源、弹幕、字幕、离线缓存与本地媒体库，并提供动漫实时超分辨率画质增强。 |
 | AnimeFlow | 2.6.3 | 2026-10-12 | AnimeFlow 是一个跨平台动漫视频播放应用，支持 Android、iOS、Windows、macOS 与 Linux。内置多数据源与自定义 XPath 爬虫配置，支持基于 Anime4K 的实时视频 4K 超分辨率，对接 Bangumi 同步收藏与追番数据，并支持多平台弹幕源与丰富的弹幕设置。 |
-| Apollo for Reddit - GLASS | 3.9.0 | 2026-10-09 | Apollo-Reborn is the community-maintained Apollo sideload build powered by the Apollo-Reborn tweak.  It restores custom API support, media fixes, upload... |
 | ARMSX2 | nightly-20261011 | 2026-10-11 | A free and open-source PlayStation 2 (PS2) emulator based on PCSX2, with native ARM64 JIT recompilers. Play PS2 games on your phone, PC, or gaming handh... |
 | Doer | 1.8.6 | 2026-10-10 | A native iOS client for Linux.do — UIKit + Swift, no SwiftUI in the main app. |
 | DolphiniOS | 5.0.0b6 | 2026-06-20 | Dolphin for iOS, reborn. A GameCube and Wii emulator for iPhone and iPad. |
 | DukeX | 1.0.2 | 2026-06-30 | DukeX is an experimental iOS-focused frontend for xemu. It embeds the xemu core in a native Swift shell and presents the Vulkan renderer through MoltenV... |
 | EhPanda | 2.8.1 | 2026-07-20 | EhPanda is an unofficial E-Hentai app for iOS & iPadOS built with SwiftUI & TCA. It supports almost all E-Hentai gallery categories, gallery browsing wi... |
 | Fathom | 1.0.0 | 2026-09-14 | An x86-64 PC emulator for iOS. Fathom runs x86-64 Linux programs on an iPhone or iPad by translating them to ARM64 as they execute, using FEXCore - the ... |
-| Husk | 2.0 | 2026-10-11 | Run Android apps on iOS: drop in an APK, tap it, and the Android app opens full-screen on a QEMU guest with hardware-accelerated display and audio. Need... |
 | Iridium | 0.2.0 | 2026-10-04 | An experimental iPhone and iPad Windows-game runtime, with a native game library and touch, keyboard, mouse, and controller integration. Requires iOS 18... |
 | iTorrent | 2.2.0-1 | 2026-07-19 | iTorrent is an ordinary torrent client for iOS with Files app support and much more.  What can this app do:  • Download in the background • Live Activit... |
 | KMusic | 2.3.0 | 2026-03-12 | 基于 SwiftUI 开发的多源音乐聚合播放器，支持 iOS/macOS。内置酷我、酷狗、QQ 音乐、网易云、咪咕等多平台音源，支持 LRC 歌词同步、全局搜索、后台播放与深色主题，并可通过 JS 脚本导入自定义音源。 |
