@@ -455,6 +455,22 @@ def build_single_app(target_name, old_apps):
     return None
 
 
+APP_ORDER = [
+    "PiliPlus",
+    "YTKACE",
+    "YouTube Music",
+    "EeveeSpotify Reincarnated",
+    "Facebook",
+    "Threads",
+    "Instagram",
+]
+
+
+def sort_apps_by_order(apps):
+    order = {name: index for index, name in enumerate(APP_ORDER)}
+    return sorted(apps, key=lambda app: order.get(app.get("name"), len(order)))
+
+
 def update_source_apps(old_source, old_apps, target_name=None):
     if not target_name:
         apps = []
@@ -488,7 +504,7 @@ def update_source_apps(old_source, old_apps, target_name=None):
             previous = find_previous_app({"apps": old_apps}, name=SIDELOADLABS_DISPLAY_NAME)
             if previous: apps.append(previous)
             else: print(f"❌ {SIDELOADLABS_DISPLAY_NAME}: update failed and no previous version available")
-        return keep_latest_only(apps)
+        return sort_apps_by_order(keep_latest_only(apps))
 
     if target_name == "all":
         return update_source_apps(old_source, old_apps)
@@ -501,7 +517,7 @@ def update_source_apps(old_source, old_apps, target_name=None):
     apps = list(old_apps)
     if target_index is None: apps.append(updated)
     else: apps[target_index] = updated
-    return keep_latest_only(apps)
+    return sort_apps_by_order(keep_latest_only(apps))
 
 
 def main():
