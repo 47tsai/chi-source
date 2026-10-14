@@ -84,6 +84,12 @@ def load_app_config():
 GITHUB_APPS = load_app_config()
 SOURCE_DATA_URL = "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/apps.json"
 APPT_ESTERS_REPO_URL = "https://github.com/apptesters-org/AppTesters_Repo"
+IPA_VAULT_SOURCE_URL = "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
+IPA_VAULT_REPO_URL = "https://github.com/927tx/IPA-Vault"
+IPA_VAULT_APPS = {
+    "Facebook": {"name": "Facebook (iQFace)", "bundleIdentifier": "com.facebook.Facebook"},
+    "Threads": {"name": "Threads (ThreadSaver)", "bundleIdentifier": "com.burbn.barcelona"},
+}
 SIDeloadLABS_SOURCE_URL = "https://raw.githubusercontent.com/SideloadLabs/SideloasLabs-AltSource/main/apps.json"
 SIDELOADLABS_REPO_URL = "https://github.com/SideloadLabs/SideloasLabs-AltSource"
 TARGET_APPS = ["Facebook", "Threads", "Instagram"]
@@ -266,6 +272,39 @@ def build_from_apptesters(app):
     return {"name": name, "bundleIdentifier": app["bundleIdentifier"], "developerName": "AppTesters", "subtitle": format_app_subtitle(style["subtitle"], app.get("versionDate", "")), "localizedDescription": app.get("localizedDescription", ""), "iconURL": app.get("iconURL") or app.get("icon"), "tintColor": style["color"], "category": "social" if name in {"Facebook", "Threads", "Instagram"} else "entertainment", "screenshots": [], "versions": [{"version": app.get("version", ""), "date": app.get("versionDate", ""), "localizedDescription": app.get("localizedDescription", ""), "downloadURL": url, "size": size}]}
 
 
+def build_from_ipavault(apps, target_name):
+    config = IPA_VAULT_APPS.get(target_name)
+    if not config or not isinstance(apps, list):
+        return None
+    match = next((item for item in apps if isinstance(item, dict) and item.get("name") == config["name"]), None)
+    if not isinstance(match, dict) or match.get("bundleIdentifier") != config["bundleIdentifier"]:
+        return None
+    url, size = match.get("downloadURL"), match.get("size", 0)
+    version = match.get("version")
+    version_date = match.get("versionDate", "")
+    if not version or not version_date or not url or not validate_download_url(url, size):
+        return None
+    style = APP_STYLE[target_name]
+    return {
+        "name": target_name,
+        "bundleIdentifier": config["bundleIdentifier"],
+        "developerName": "IPA Vault",
+        "subtitle": format_app_subtitle("IPA Vault", version_date),
+        "localizedDescription": match.get("localizedDescription", ""),
+        "iconURL": match.get("iconURL"),
+        "tintColor": style["color"],
+        "category": "social",
+        "screenshots": [],
+        "versions": [{
+            "version": str(version),
+            "date": version_date,
+            "localizedDescription": match.get("versionDescription") or match.get("localizedDescription", ""),
+            "downloadURL": url,
+            "size": size,
+        }],
+    }
+
+
 def find_previous_app(old_apps, bundle_id=None, name=None):
     if not isinstance(old_apps, dict): return None
     for app in old_apps.get("apps", []):
@@ -306,6 +345,7 @@ def get_app_meta(name):
     for app in GITHUB_APPS:
         if app["name"] == name: return app["author"], app["repo_url"]
     if name == SIDELOADLABS_DISPLAY_NAME: return "SideloadLabs", SIDELOADLABS_REPO_URL
+    if name in IPA_VAULT_APPS: return "IPA Vault", IPA_VAULT_REPO_URL
     return ("AppTesters", APPT_ESTERS_REPO_URL) if name in TARGET_APPS else ("Unknown", "")
 
 
@@ -360,6 +400,11 @@ def build_single_app(target_name, old_apps):
         if built: return built
         return find_previous_app({"apps": old_apps}, bundle_id=config["bundleID"])
 
+    if target_name in IPA_VAULT_APPS:
+        source = JSON_PROVIDER.fetch(IPA_VAULT_SOURCE_URL)
+        built = build_from_ipavault(ensure_list(source, "apps"), target_name)
+        return built or find_previous_app({"apps": old_apps}, name=target_name)
+
     if target_name in TARGET_APPS:
         remote_apps = fetch_remote()
         match = next((app for app in remote_apps or [] if isinstance(app, dict) and app.get("name") == target_name), None)
@@ -386,9 +431,14 @@ def update_source_apps(old_source, old_apps, target_name=None):
                 else: print(f"❌ {config['name']}: update failed and no previous version available")
 
         remote_apps = fetch_remote()
+        ipavault_data = JSON_PROVIDER.fetch(IPA_VAULT_SOURCE_URL)
+        ipavault_apps = ensure_list(ipavault_data, "apps")
         for target in TARGET_APPS:
-            match = next((app for app in remote_apps or [] if isinstance(app, dict) and app.get("name") == target), None)
-            built = build_from_apptesters(match) if match else None
+            if target in IPA_VAULT_APPS:
+                built = build_from_ipavault(ipavault_apps, target)
+            else:
+                match = next((app for app in remote_apps or [] if isinstance(app, dict) and app.get("name") == target), None)
+                built = build_from_apptesters(match) if match else None
             if built: apps.append(built)
             else:
                 previous = find_previous_app({"apps": old_apps}, name=target)
