@@ -101,7 +101,7 @@ def test_get_status_updated_at_invalid_block():
 
 
 def test_app_config_contains_expected_github_apps():
-    assert [app["name"] for app in updater.GITHUB_APPS] == ["PiliPlus", "YTKACE", "MaxMusic"]
+    assert [app["name"] for app in updater.GITHUB_APPS] == ["PiliPlus", "YTKACE"]
     for app in updater.GITHUB_APPS:
         assert app["repo"]
         assert app["bundleID"]
