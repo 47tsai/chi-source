@@ -351,13 +351,21 @@ def get_app_meta(name):
     return ("AppTesters", APPT_ESTERS_REPO_URL) if name in TARGET_APPS else ("Unknown", "")
 
 
+def format_display_date(value):
+    """Show dates consistently as YYYY-MM-DD in the README table."""
+    if not isinstance(value, str):
+        return "N/A"
+    match = re.match(r"^(\d{4}-\d{2}-\d{2})", value.strip())
+    return match.group(1) if match else value
+
+
 def format_app_update_time(app, status_times, checked_at):
     name = app.get("name", "Unknown")
     exact_time = status_times.get(name)
     if exact_time and is_updated_within_day(exact_time, checked_at):
-        return f"**{exact_time}**"
+        return f"**{format_display_date(exact_time)}**"
     date = ((app.get("versions") or [{}])[0]).get("date", "N/A")
-    return date or "N/A"
+    return format_display_date(date or "N/A")
 
 
 def update_readme(apps, checked_at, content_updated_at, statuses, status_times):
@@ -372,7 +380,7 @@ def update_readme(apps, checked_at, content_updated_at, statuses, status_times):
         status = statuses.get(name, "Unchanged")
         if status == "Updated":
             status = "**Updated**"
-        rows.append(f"| **{app_link}** | {author} | {status} | {latest.get('version', 'N/A')} | {latest.get('date', 'N/A')} | {format_app_update_time(app, status_times, checked_at)} |")
+        rows.append(f"| **{app_link}** | {author} | {status} | {latest.get('version', 'N/A')} | {format_display_date(latest.get('date', 'N/A'))} | {format_app_update_time(app, status_times, checked_at)} |")
     app_table = "\n".join([
         APP_TABLE_START,
         "## Apps 更新狀態",
