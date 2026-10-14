@@ -361,7 +361,8 @@ def format_app_update_time(app, status_times, checked_at):
 
 
 def update_readme(apps, checked_at, content_updated_at, statuses, status_times):
-    path = Path(README_FILENAME); readme = path.read_text(encoding="utf-8") if path.exists() else "# Chi Source\\n"
+    path = Path(README_FILENAME)
+    readme = path.read_text(encoding="utf-8") if path.exists() else "# Chi Source\\n"
     rows = ["| App | 原倉庫 | 狀態 | 最新版本 | 版本日期 | 上次更新 |", "| --- | --- | --- | --- | --- | --- |"]
     for app in apps:
         name = app.get("name", "Unknown")
@@ -381,18 +382,24 @@ def update_readme(apps, checked_at, content_updated_at, statuses, status_times):
         APP_TABLE_END,
     ])
     if APP_TABLE_START in readme and APP_TABLE_END in readme:
-        readme = re.sub(re.escape(APP_TABLE_START) + r".*?" + re.escape(APP_TABLE_END), lambda _: app_table, readme, flags=re.DOTALL)
+        left = readme.index(APP_TABLE_START)
+        right = readme.index(APP_TABLE_END, left) + len(APP_TABLE_END)
+        readme = readme[:left] + app_table + readme[right:]
     else:
         readme = readme.rstrip() + "\\n\\n" + app_table + "\\n"
-    # Remove the old separate status section so existing READMEs migrate to the unified table.
-    readme = re.sub(re.escape(STATUS_START) + r".*?" + re.escape(STATUS_END) + r"\\n?", "", readme, flags=re.DOTALL)
+    if STATUS_START in readme and STATUS_END in readme:
+        left = readme.index(STATUS_START)
+        right = readme.index(STATUS_END, left) + len(STATUS_END)
+        readme = readme[:left] + readme[right:]
     status_times_block = "\\n".join([
         STATUS_TIMES_START,
         f"<!-- {json.dumps(status_times, ensure_ascii=False, sort_keys=True)} -->",
         STATUS_TIMES_END,
     ])
     if STATUS_TIMES_START in readme and STATUS_TIMES_END in readme:
-        readme = re.sub(re.escape(STATUS_TIMES_START) + r".*?" + re.escape(STATUS_TIMES_END), lambda _: status_times_block, readme, flags=re.DOTALL)
+        left = readme.index(STATUS_TIMES_START)
+        right = readme.index(STATUS_TIMES_END, left) + len(STATUS_TIMES_END)
+        readme = readme[:left] + status_times_block + readme[right:]
     else:
         readme = readme.rstrip() + "\\n" + status_times_block + "\\n"
     path.write_text(readme, encoding="utf-8")
