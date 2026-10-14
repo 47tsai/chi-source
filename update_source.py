@@ -210,13 +210,13 @@ def get_latest_special_release(app, releases=None):
         return None
 
 
-def format_subtitle(subtitle, date=None):
-    """Keep the upstream project's descriptive subtitle; never append author/date."""
-    return subtitle
+def format_subtitle(author, date=None):
+    """Match the original source style: author followed by the release date."""
+    return f"{author}（{date}）" if date else author
 
 
-def format_app_subtitle(subtitle, version_date=None):
-    return format_subtitle(subtitle)
+def format_app_subtitle(author, version_date=None):
+    return format_subtitle(author, version_date)
 
 
 def build_from_github(app):
@@ -239,7 +239,7 @@ def build_from_github(app):
         download_url, size = ipa.get("browser_download_url"), ipa.get("size", 0)
         if not version_name or not download_url or not validate_download_url(download_url, size): return None
         version_date = (data.get("published_at") or data.get("created_at") or "")[:10]
-        return {"name": app["name"], "bundleIdentifier": app["bundleID"], "developerName": app["author"], "subtitle": format_app_subtitle(app["subtitle"], version_date), "localizedDescription": app["desc"], "iconURL": app["icon"], "tintColor": app["color"], "category": app.get("category", "entertainment"), "screenshots": [], "versions": [{"version": version_name, "date": version_date, "localizedDescription": (data.get("body") or "")[:500], "downloadURL": download_url, "size": size}]}
+        return {"name": app["name"], "bundleIdentifier": app["bundleID"], "developerName": app["author"], "subtitle": format_app_subtitle(app["author"], version_date), "localizedDescription": app["desc"], "iconURL": app["icon"], "tintColor": app["color"], "category": app.get("category", "entertainment"), "screenshots": [], "versions": [{"version": version_name, "date": version_date, "localizedDescription": (data.get("body") or "")[:500], "downloadURL": download_url, "size": size}]}
     except (requests.RequestException, ValueError):
         return None
 
@@ -254,7 +254,7 @@ def build_from_sideloadlabs(apps):
         "name": SIDELOADLABS_DISPLAY_NAME,
         "bundleIdentifier": match["bundleIdentifier"],
         "developerName": match.get("developerName", "SideloadLabs"),
-        "subtitle": match.get("subtitle") or "This tweak makes Spotify think you have a Premium subscription, granting free listening, just like Spotilife, and provides some additional features like custom lyrics.",
+        "subtitle": format_app_subtitle(match.get("developerName", "SideloadLabs"), match.get("versionDate", "")),
         "localizedDescription": match.get("localizedDescription", ""),
         "iconURL": match.get("iconURL"),
         "tintColor": "669878",
@@ -275,7 +275,7 @@ def build_from_apptesters(app):
     name = app.get("name"); style = APP_STYLE.get(name, {"color": None, "subtitle": "AppTesters"})
     url, size = app.get("downloadURL"), app.get("size", 0)
     if not app.get("bundleIdentifier") or not url or not validate_download_url(url, size): return None
-    return {"name": name, "bundleIdentifier": app["bundleIdentifier"], "developerName": "AppTesters", "subtitle": app.get("subtitle") or style["subtitle"], "localizedDescription": app.get("localizedDescription", ""), "iconURL": app.get("iconURL") or app.get("icon"), "tintColor": style["color"], "category": "social" if name in {"Facebook", "Threads", "Instagram"} else "entertainment", "screenshots": [], "versions": [{"version": app.get("version", ""), "date": app.get("versionDate", ""), "localizedDescription": app.get("localizedDescription", ""), "downloadURL": url, "size": size}]}
+    return {"name": name, "bundleIdentifier": app["bundleIdentifier"], "developerName": "AppTesters", "subtitle": format_app_subtitle("AppTesters", app.get("versionDate", "")), "localizedDescription": app.get("localizedDescription", ""), "iconURL": app.get("iconURL") or app.get("icon"), "tintColor": style["color"], "category": "social" if name in {"Facebook", "Threads", "Instagram"} else "entertainment", "screenshots": [], "versions": [{"version": app.get("version", ""), "date": app.get("versionDate", ""), "localizedDescription": app.get("localizedDescription", ""), "downloadURL": url, "size": size}]}
 
 
 def build_from_ipavault(apps, target_name):
@@ -295,7 +295,7 @@ def build_from_ipavault(apps, target_name):
         "name": target_name,
         "bundleIdentifier": config["bundleIdentifier"],
         "developerName": "IPA Vault",
-        "subtitle": match.get("subtitle") or match.get("localizedDescription") or style["subtitle"],
+        "subtitle": format_app_subtitle("IPA Vault", version_date),
         "localizedDescription": match.get("localizedDescription", ""),
         "iconURL": match.get("iconURL"),
         "tintColor": style["color"],
