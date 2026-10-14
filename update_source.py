@@ -361,36 +361,40 @@ def format_app_update_time(app, status_times, checked_at):
 
 
 def update_readme(apps, checked_at, content_updated_at, statuses, status_times):
-    path = Path(README_FILENAME); readme = path.read_text(encoding="utf-8") if path.exists() else "# Chi Source\n"
-    rows = ["| App | 原倉庫 | 上次更新 |", "| --- | --- | --- |"]
+    path = Path(README_FILENAME); readme = path.read_text(encoding="utf-8") if path.exists() else "# Chi Source\\n"
+    rows = ["| App | 原倉庫 | 狀態 | 最新版本 | 版本日期 | 上次更新 |", "| --- | --- | --- | --- | --- | --- |"]
     for app in apps:
         name = app.get("name", "Unknown")
         author, url = get_app_meta(name)
         app_link = f"[{name}]({url})" if url else name
-        rows.append(f"| **{app_link}** | {author} | {format_app_update_time(app, status_times, checked_at)} |")
-    status_rows = ["| App | 狀態 | 最新版本 | 版本日期 |", "| --- | --- | --- | --- |"]
-    for app in apps:
         latest = (app.get("versions") or [{}])[0]
-        status_rows.append(f"| {app.get('name', 'Unknown')} | {statuses.get(app.get('name'), '⚪ Unchanged')} | {latest.get('version', 'N/A')} | {latest.get('date', 'N/A')} |")
-    app_table = "\n".join([APP_TABLE_START, "## Apps", "", *rows, "", APP_TABLE_END])
-    status = "\n".join([STATUS_START, "## 更新狀態", f"- **最近自動檢查：** {checked_at}（台灣時間）", f"- **最近內容更新：** {content_updated_at}（台灣時間）", "", *status_rows, "", STATUS_END])
-    status_times_block = "\n".join([
+        rows.append(f"| **{app_link}** | {author} | {statuses.get(name, '⚪ Unchanged')} | {latest.get('version', 'N/A')} | {latest.get('date', 'N/A')} | {format_app_update_time(app, status_times, checked_at)} |")
+    app_table = "\\n".join([
+        APP_TABLE_START,
+        "## Apps 更新狀態",
+        "",
+        f"- **最近自動檢查：** {checked_at}（台灣時間）",
+        f"- **最近內容更新：** {content_updated_at}（台灣時間）",
+        "",
+        *rows,
+        "",
+        APP_TABLE_END,
+    ])
+    if APP_TABLE_START in readme and APP_TABLE_END in readme:
+        readme = re.sub(re.escape(APP_TABLE_START) + r".*?" + re.escape(APP_TABLE_END), lambda _: app_table, readme, flags=re.DOTALL)
+    else:
+        readme = readme.rstrip() + "\\n\\n" + app_table + "\\n"
+    # Remove the old separate status section so existing READMEs migrate to the unified table.
+    readme = re.sub(re.escape(STATUS_START) + r".*?" + re.escape(STATUS_END) + r"\\n?", "", readme, flags=re.DOTALL)
+    status_times_block = "\\n".join([
         STATUS_TIMES_START,
         f"<!-- {json.dumps(status_times, ensure_ascii=False, sort_keys=True)} -->",
         STATUS_TIMES_END,
     ])
-    if APP_TABLE_START in readme and APP_TABLE_END in readme:
-        readme = re.sub(re.escape(APP_TABLE_START) + r".*?" + re.escape(APP_TABLE_END), app_table, readme, flags=re.DOTALL)
-    else:
-        readme = readme.rstrip() + "\n\n" + app_table + "\n"
-    if STATUS_START in readme and STATUS_END in readme:
-        readme = re.sub(re.escape(STATUS_START) + r".*?" + re.escape(STATUS_END), status, readme, flags=re.DOTALL)
-    else:
-        readme = readme.rstrip() + "\n\n" + status + "\n"
     if STATUS_TIMES_START in readme and STATUS_TIMES_END in readme:
-        readme = re.sub(re.escape(STATUS_TIMES_START) + r".*?" + re.escape(STATUS_TIMES_END), status_times_block, readme, flags=re.DOTALL)
+        readme = re.sub(re.escape(STATUS_TIMES_START) + r".*?" + re.escape(STATUS_TIMES_END), lambda _: status_times_block, readme, flags=re.DOTALL)
     else:
-        readme = readme.rstrip() + "\n" + status_times_block + "\n"
+        readme = readme.rstrip() + "\\n" + status_times_block + "\\n"
     path.write_text(readme, encoding="utf-8")
 
 
