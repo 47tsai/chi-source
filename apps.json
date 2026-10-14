@@ -9,10 +9,10 @@
   "featuredApps": [
     "com.bgg.piliplus",
     "com.google.ios.youtube",
-    "com.google.ios.youtubemusic.ytmultimateplus",
     "com.facebook.Facebook",
     "com.burbn.barcelona",
     "com.burbn.instagram",
+    "com.google.ios.youtubemusic.ytmultimateplus",
     "com.spotify.client.patched"
   ],
   "apps": [
@@ -53,26 +53,6 @@
           "localizedDescription": "by @itzzace0\n\nWhat's new:\n• Updated to YouTube 21.41.5\n• Added Hide AI Channels, which hides videos from channels on the AiSList blocklist in your feed and search, with an option for the warnlist too\n• Swipe the SponsorBlock popup away to dismiss it\n\nFixed:\n• Shorts download button sometimes missing on the new Shorts UI\n• Auto-Skip and Play Shorts Once not working on the new Shorts UI\n• Pinch to fullscreen in Shorts freezing or starting the next Short\n• Loop button not looping when Local Queue i",
           "downloadURL": "https://github.com/itzzace/ytkace/releases/download/v1.1.3/YTKACE_1.1.3_YouTube_21.41.5.ipa",
           "size": 137158764
-        }
-      ]
-    },
-    {
-      "name": "YouTube Music",
-      "bundleIdentifier": "com.google.ios.youtubemusic.ytmultimateplus",
-      "developerName": "IPA Vault",
-      "subtitle": "IPA Vault（2026-10-11）",
-      "localizedDescription": "YouTube Music 9.41.2 with YTMUltimate+ 2.4.1\n\nAdded Tweaks:\nYTMABConfig, YouMusicPIP, VolumeBoostYT, ReturnYouTubeMusicDislike",
-      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/YouTube-Music-Icons/YouTube-Music-AppStore-1024x1024.png",
-      "tintColor": "E8A8B7",
-      "category": "entertainment",
-      "screenshots": [],
-      "versions": [
-        {
-          "version": "9.41.2",
-          "date": "2026-10-11",
-          "localizedDescription": "IPA Vault build for YTMUltimate+, version 9.41.2",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/YTMUltimatePlus-9.41.2.ipa",
-          "size": 111187370
         }
       ]
     },
@@ -133,6 +113,26 @@
           "localizedDescription": "IPA Vault build for Instagram (RyukGram), version 451.0.0",
           "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Instagram-451.0.0-RyukGram.ipa",
           "size": 345086224
+        }
+      ]
+    },
+    {
+      "name": "YouTube Music",
+      "bundleIdentifier": "com.google.ios.youtubemusic.ytmultimateplus",
+      "developerName": "IPA Vault",
+      "subtitle": "IPA Vault（2026-10-11）",
+      "localizedDescription": "YouTube Music 9.41.2 with YTMUltimate+ 2.4.1\n\nAdded Tweaks:\nYTMABConfig, YouMusicPIP, VolumeBoostYT, ReturnYouTubeMusicDislike",
+      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/YouTube-Music-Icons/YouTube-Music-AppStore-1024x1024.png",
+      "tintColor": "E8A8B7",
+      "category": "entertainment",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "9.41.2",
+          "date": "2026-10-11",
+          "localizedDescription": "IPA Vault build for YTMUltimate+, version 9.41.2",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/YTMUltimatePlus-9.41.2.ipa",
+          "size": 111187370
         }
       ]
     },
