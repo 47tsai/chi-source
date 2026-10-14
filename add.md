@@ -17,6 +17,27 @@
 | **Google Photos** | IPA Vault Gunshot 7.20.2、7.44.0、7.96.0（均標示 10/09） | 同一修改功能的不同本體版本，7.96.0 最新 | **Google Photos Gunshot 7.96.0**，除非需要舊版 iOS 相容性 |
 | **Husk** | AltGallery 2.0（10/11）；IPA Vault 1.1.0（10/09） | AltGallery 版本較新，日期也較晚 | **你選擇略過，暫不決定** |
 
+## 同類 App 的不同修改版本
+
+以下整理底層 App 相同、但使用不同修改套件的候選項，方便直接比較功能差異；同一列中的版本不代表功能完全相同。
+
+| App 類別 | 不同修改版本 | 差異簡述 |
+|---|---|---|
+| **Spotify** | Vitrine、EeveeSpotify | 兩種不同的 Spotify 修改分支，應依各自提供的功能與相容性選擇。 |
+| **Reddit** | MoeReddit、RedditFilter | 都是 Reddit 修改版，但附加功能不同；RedditFilter 偏向內容過濾。 |
+| **Twitch** | TwitchControl／Tweach、IPA Vault Twitch | 修改套件與版本來源不同，需進一步確認各自的附加功能。 |
+| **Infuse** | Infuse Plus（IPA Vault、Moe） | 都是 Infuse Plus 修改版，目前主要可比較本體版本與更新日期。 |
+| **Google Photos** | Gunshot | 同一修改版提供不同 Google Photos 本體版本，主要差異是版本與相容性。 |
+| **Messenger** | Flow、MSGPlusX、Login build | Flow 與 MSGPlusX 是不同修改套件；Login build 則是特別標示的登入版本。 |
+| **iMe** | MxGram、iQTele | 同一 Telegram 第三方客戶端搭配不同修改套件。 |
+| **Nagram** | MxGram、iQTele、TGExtra | 同一 Nagram 客戶端有三種修改套件可選。 |
+| **Swiftgram** | MxGram、iQTele、TGExtra | 同一 Swiftgram 客戶端有三種修改套件可選。 |
+| **Telegram** | MxGram、iQTele、TGExtra | 官方 Telegram 客戶端分別搭配三種不同修改套件。 |
+| **Turrit** | MxGram、iQTele、TGExtra | 同一 Turrit 客戶端有三種修改套件可選。 |
+| **Twitter／X** | NFB、NFB + TWIGalaxy | NFB + TWIGalaxy 在 NFB 之外再加入 TWIGalaxy；Twitter 與 X 條目則對應不同名稱的本體版本。 |
+| **Discord** | RainTweak | 目前清單只列出一種修改套件，尚無同類版本可直接比較。 |
+| **TikTok** | Infinitok | 目前清單只列出一種修改套件，尚無同類版本可直接比較。 |
+
 ### 共同項處理原則
 
 - 已有自有來源且版本、日期、修改功能相同：優先保留自有項目，不重複收錄。
