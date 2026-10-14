@@ -86,9 +86,6 @@ SOURCE_DATA_URL = "https://raw.githubusercontent.com/apptesters-org/AppTesters_R
 APPT_ESTERS_REPO_URL = "https://github.com/apptesters-org/AppTesters_Repo"
 IPA_VAULT_SOURCE_URL = "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
 IPA_VAULT_REPO_URL = "https://github.com/927tx/IPA-Vault"
-CHI_PERSONAL_SOURCE_URL = "https://raw.githubusercontent.com/tsai97216/chi-source-personal/main/apps.json"
-CHI_PERSONAL_REPO_URL = "https://github.com/tsai97216/chi-source-personal"
-PERSONAL_SOURCE_APPS = ["Animeko", "Kazumi", "Aidoku", "AirCard-iOS"]
 IPA_VAULT_APPS = {
     "Facebook": {"name": "Facebook (iQFace)", "bundleIdentifier": "com.facebook.Facebook"},
     "Threads": {"name": "Threads (ThreadSaver)", "bundleIdentifier": "com.burbn.barcelona"},
@@ -261,7 +258,7 @@ def build_from_sideloadlabs(apps):
         "bundleIdentifier": match["bundleIdentifier"],
         "developerName": match.get("developerName", "SideloadLabs"),
         "subtitle": format_app_subtitle(match.get("developerName", "SideloadLabs"), match.get("versionDate", "")),
-        "localizedDescription": match.get("localizedDescription") or latest.get("localizedDescription") or f"{target_name} app",
+        "localizedDescription": match.get("localizedDescription", ""),
         "iconURL": match.get("iconURL"),
         "tintColor": "669878",
         "category": "entertainment",
@@ -282,39 +279,6 @@ def build_from_apptesters(app):
     url, size = app.get("downloadURL"), app.get("size", 0)
     if not app.get("bundleIdentifier") or not url or not validate_download_url(url, size): return None
     return {"name": name, "bundleIdentifier": app["bundleIdentifier"], "developerName": "AppTesters", "subtitle": format_app_subtitle("AppTesters", app.get("versionDate", "")), "localizedDescription": app.get("localizedDescription", ""), "iconURL": app.get("iconURL") or app.get("icon"), "tintColor": style["color"], "category": "social" if name in {"Facebook", "Threads", "Instagram"} else "entertainment", "screenshots": [], "versions": [{"version": app.get("version", ""), "date": app.get("versionDate", ""), "localizedDescription": app.get("localizedDescription", ""), "downloadURL": url, "size": size}]}
-
-
-def build_from_personal_source(apps, target_name):
-    if not isinstance(apps, list):
-        return None
-    match = next((item for item in apps if isinstance(item, dict) and item.get("name") == target_name), None)
-    if not isinstance(match, dict):
-        return None
-    latest = next((item for item in (match.get("versions") or []) if isinstance(item, dict)), None)
-    if not latest:
-        return None
-    url, size = latest.get("downloadURL"), latest.get("size", 0)
-    version, version_date = latest.get("version"), latest.get("date")
-    if not match.get("bundleIdentifier") or not version or not version_date or not url or not validate_download_url(url, size):
-        return None
-    return {
-        "name": target_name,
-        "bundleIdentifier": match["bundleIdentifier"],
-        "developerName": "Chi Source Personal",
-        "subtitle": format_app_subtitle("Chi Source Personal", version_date),
-        "localizedDescription": match.get("localizedDescription", ""),
-        "iconURL": match.get("iconURL"),
-        "tintColor": match.get("tintColor") or "6750A4",
-        "category": match.get("category", "entertainment"),
-        "screenshots": match.get("screenshots", []),
-        "versions": [{
-            "version": str(version),
-            "date": version_date,
-            "localizedDescription": latest.get("localizedDescription") or match.get("localizedDescription", ""),
-            "downloadURL": url,
-            "size": size,
-        }],
-    }
 
 
 def build_from_ipavault(apps, target_name):
@@ -391,7 +355,6 @@ def get_app_meta(name):
         if app["name"] == name: return app["author"], app["repo_url"]
     if name == SIDELOADLABS_DISPLAY_NAME: return "SideloadLabs", SIDELOADLABS_REPO_URL
     if name in IPA_VAULT_APPS: return "IPA Vault", IPA_VAULT_REPO_URL
-    if name in PERSONAL_SOURCE_APPS: return "Chi Source Personal", CHI_PERSONAL_REPO_URL
     return ("AppTesters", APPT_ESTERS_REPO_URL) if name in TARGET_APPS else ("Unknown", "")
 
 
@@ -473,11 +436,6 @@ def build_single_app(target_name, old_apps):
         if built: return built
         return find_previous_app({"apps": old_apps}, bundle_id=config["bundleID"])
 
-    if target_name in PERSONAL_SOURCE_APPS:
-        source = JSON_PROVIDER.fetch(CHI_PERSONAL_SOURCE_URL)
-        built = build_from_personal_source(ensure_list(source, "apps"), target_name)
-        return built or find_previous_app({"apps": old_apps}, name=target_name)
-
     if target_name in IPA_VAULT_APPS:
         source = JSON_PROVIDER.fetch(IPA_VAULT_SOURCE_URL)
         built = build_from_ipavault(ensure_list(source, "apps"), target_name)
@@ -517,16 +475,6 @@ def update_source_apps(old_source, old_apps, target_name=None):
             else:
                 match = next((app for app in remote_apps or [] if isinstance(app, dict) and app.get("name") == target), None)
                 built = build_from_apptesters(match) if match else None
-            if built: apps.append(built)
-            else:
-                previous = find_previous_app({"apps": old_apps}, name=target)
-                if previous: apps.append(previous)
-                else: print(f"❌ {target}: update failed and no previous version available")
-
-        personal_data = JSON_PROVIDER.fetch(CHI_PERSONAL_SOURCE_URL)
-        personal_apps = ensure_list(personal_data, "apps")
-        for target in PERSONAL_SOURCE_APPS:
-            built = build_from_personal_source(personal_apps, target)
             if built: apps.append(built)
             else:
                 previous = find_previous_app({"apps": old_apps}, name=target)
