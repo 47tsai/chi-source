@@ -22,7 +22,7 @@
 | **Google Photos** | IPA Vault Gunshot 7.20.2、7.44.0、7.96.0（均標示 10/09） | 同一修改功能的不同本體版本，7.96.0 最新 | **Google Photos Gunshot 7.96.0**，除非需要舊版 iOS 相容性 |
 | **PiliPlus** | 自有 Chi Source 2.1.6.2（10/10）；AltGallery 2.1.6（build 5472，10/10） | 更新日期相同，版本標記不同，可能是不同打包方式 | **你選定：自有 Chi Source PiliPlus 2.1.6.2** |
 | **Animeko** | 自有 Chi Source Personal 6.3.0（10/13）；AltGallery 6.3.0（10/13） | 版本與更新日期相同 | **你選定：自有 Chi Source Personal Animeko 6.3.0** |
-| **Kazumi** | 自有 Chi Source Personal 2.3.8（10/07）；AltGallery 2.3.8（10/07） | 版本與更新日期相同 | **自有 Kazumi** |
+| **Kazumi** | 自有 Chi Source Personal 2.3.8（10/07）；AltGallery 2.3.8（10/07） | 版本與更新日期相同 | **你選定：自有 Chi Source Personal Kazumi 2.3.8** |
 | **Aidoku** | 自有 Chi Source Personal 0.9（9/03）；AltGallery 0.9（9/03） | 版本與更新日期相同 | **自有 Aidoku** |
 | **AirCard-iOS** | 自有 Chi Source Personal 1.3.2（10/04）；AltGallery 1.3.2（10/04） | 版本與日期相同，但 AltGallery 標示 iOS 27 起、自有來源標示 iOS 18，最低版本資訊互相矛盾 | **先保留自有版本**，並核實相容性後再決定是否更新 |
 | **Husk** | AltGallery 2.0（10/11）；IPA Vault 1.1.0（10/09） | AltGallery 版本較新，日期也較晚 | **AltGallery Husk 2.0** |
