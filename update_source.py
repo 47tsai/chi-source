@@ -302,7 +302,7 @@ def build_from_ipavault(apps, target_name):
         "localizedDescription": match.get("localizedDescription", ""),
         "iconURL": match.get("iconURL"),
         "tintColor": style["color"],
-        "category": "social",
+        "category": "social" if target_name in {"Facebook", "Threads", "Instagram"} else "entertainment",
         "screenshots": [],
         "versions": [{
             "version": str(version),
