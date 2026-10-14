@@ -89,16 +89,19 @@ IPA_VAULT_REPO_URL = "https://github.com/927tx/IPA-Vault"
 IPA_VAULT_APPS = {
     "Facebook": {"name": "Facebook (iQFace)", "bundleIdentifier": "com.facebook.Facebook"},
     "Threads": {"name": "Threads (ThreadSaver)", "bundleIdentifier": "com.burbn.barcelona"},
+    "Instagram": {"name": "Instagram (RyukGram)", "bundleIdentifier": "com.burbn.instagram"},
+    "YouTube Music": {"name": "YTMUltimate+", "bundleIdentifier": "com.google.ios.youtubemusic.ytmultimateplus"},
 }
 SIDeloadLABS_SOURCE_URL = "https://raw.githubusercontent.com/SideloadLabs/SideloasLabs-AltSource/main/apps.json"
 SIDELOADLABS_REPO_URL = "https://github.com/SideloadLabs/SideloasLabs-AltSource"
-TARGET_APPS = ["Facebook", "Threads", "Instagram"]
+TARGET_APPS = ["Facebook", "Threads", "Instagram", "YouTube Music"]
 SIDELOADLABS_APP = "EeveeSpotifyReincarnated(PATCHED)"
 SIDELOADLABS_DISPLAY_NAME = "EeveeSpotify Reincarnated"
 APP_STYLE = {
     "Facebook": {"color": "78A5E3", "subtitle": "Facebook with iQFace"},
     "Threads": {"color": "858585", "subtitle": "Threads with ThreadSaver"},
-    "Instagram": {"color": "DC8FA1", "subtitle": "Instagram injected with Premium"},
+    "Instagram": {"color": "DC8FA1", "subtitle": "Instagram with RyukGram"},
+    "YouTube Music": {"color": "E8A8B7", "subtitle": "YouTube Music with YTMUltimate+"},
     "EeveeSpotify Reincarnated": {
         "color": "669878",
         "subtitle": "This tweak makes Spotify think you have a Premium subscription, granting free listening, just like Spotilife, and provides some additional features like custom lyrics.",
