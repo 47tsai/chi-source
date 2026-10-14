@@ -1,4 +1,4 @@
-# Chi Sources TODO
+# Chi Source TODO
 
 ## 架構融合
 - [x] 研究 AltGallery / AltGen 的設定檔、Provider、版本解析與 merge 機制
