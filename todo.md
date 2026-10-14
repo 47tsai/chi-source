@@ -20,13 +20,15 @@
 
 ## README / Source
 - [x] 保留並完善更新狀態資訊
+- [x] 將 App 清單改為自動產生，避免 README 顯示過期更新日期
+- [x] 修正 Facebook / Threads 的來源標示為 IPA Vault
 - [ ] 評估加入 News / 更新紀錄
 - [x] 檢查 Source metadata、featuredApps 與 App metadata
 
 ## 最後檢核
-- [ ] Python 編譯
-- [ ] pytest
-- [ ] JSON 驗證
-- [ ] AltStore Source 驗證
-- [ ] 實際執行 update_source.py
-- [ ] 檢查 git diff / commit 結果
+- [x] Python 編譯（PR CI）
+- [x] pytest（PR CI）
+- [x] JSON 驗證（PR CI）
+- [x] AltStore Source 驗證（PR CI）
+- [ ] 實際執行 update_source.py（需確認合併後自動更新流程）
+- [ ] 檢查最終 diff 與合併結果
