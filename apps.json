@@ -9,7 +9,7 @@
   "featuredApps": [
     "com.bgg.piliplus",
     "com.google.ios.youtube",
-    "com.google.ios.youtubemusic",
+    "com.google.ios.youtubemusic.ytmultimateplus",
     "com.facebook.Facebook",
     "com.burbn.barcelona",
     "com.burbn.instagram",
@@ -57,22 +57,22 @@
       ]
     },
     {
-      "name": "MaxMusic",
-      "bundleIdentifier": "com.google.ios.youtubemusic",
-      "developerName": "Mark02-2012",
-      "subtitle": "Mark02-2012（2026-08-30）",
-      "localizedDescription": "MaxMusic is a fork of YTMusicUltimate with additional tweaks for YouTube Music on iOS.",
-      "iconURL": "https://raw.githubusercontent.com/Mark02-2012/YTMUltimatePLUS/MYmain/Resources/IMG_5914.png",
+      "name": "YouTube Music",
+      "bundleIdentifier": "com.google.ios.youtubemusic.ytmultimateplus",
+      "developerName": "IPA Vault",
+      "subtitle": "IPA Vault（2026-10-11）",
+      "localizedDescription": "YouTube Music 9.41.2 with YTMUltimate+ 2.4.1\n\nAdded Tweaks:\nYTMABConfig, YouMusicPIP, VolumeBoostYT, ReturnYouTubeMusicDislike",
+      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/YouTube-Music-Icons/YouTube-Music-AppStore-1024x1024.png",
       "tintColor": "E8A8B7",
       "category": "entertainment",
       "screenshots": [],
       "versions": [
         {
-          "version": "9.34.4",
-          "date": "2026-08-30",
-          "localizedDescription": "**Changed**\r\nYTMusic version",
-          "downloadURL": "https://github.com/Mark02-2012/MaxMusic/releases/download/YTMU%2B_9.34.4_2.4.1_%2884%29/YTMUltimate%2B_2.4.1_9.34.4.ipa",
-          "size": 104079008
+          "version": "9.41.2",
+          "date": "2026-10-11",
+          "localizedDescription": "IPA Vault build for YTMUltimate+, version 9.41.2",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/YTMUltimatePlus-9.41.2.ipa",
+          "size": 111187370
         }
       ]
     },
@@ -119,20 +119,20 @@
     {
       "name": "Instagram",
       "bundleIdentifier": "com.burbn.instagram",
-      "developerName": "AppTesters",
-      "subtitle": "AppTesters（2026-06-10）",
-      "localizedDescription": "Injected with Premium",
-      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.burbn.instagram.png",
+      "developerName": "IPA Vault",
+      "subtitle": "IPA Vault（2026-10-13）",
+      "localizedDescription": "Instagram 451.0.0 with RyukGram 1.4.5",
+      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Instagram-Icons/Instagram-AppStore-1024x1024.png",
       "tintColor": "DC8FA1",
       "category": "social",
       "screenshots": [],
       "versions": [
         {
-          "version": "433.0.0",
-          "date": "2026-06-10",
-          "localizedDescription": "Injected with Premium",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-06-2026/Instagram_433.0.0_Premium_%40thisismanpreets_apptesters.org.ipa",
-          "size": 282563167
+          "version": "451.0.0",
+          "date": "2026-10-13",
+          "localizedDescription": "IPA Vault build for Instagram (RyukGram), version 451.0.0",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Instagram-451.0.0-RyukGram.ipa",
+          "size": 345086224
         }
       ]
     },
