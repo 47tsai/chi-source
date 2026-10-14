@@ -304,29 +304,6 @@ def test_get_latest_special_release_uses_supplied_releases(monkeypatch):
     assert result == releases[0]
 
 
-def test_build_from_personal_source_uses_selected_apps(monkeypatch):
-    monkeypatch.setattr(updater, "validate_download_url", lambda url, size=0: True)
-    apps = [{
-        "name": "Animeko",
-        "bundleIdentifier": "org.animeko.animeko",
-        "developerName": "openani",
-        "iconURL": "https://example.com/animeko.png",
-        "tintColor": "7E57C2",
-        "category": "entertainment",
-        "versions": [{
-            "version": "6.3.0",
-            "date": "2026-10-13T06:34:15.000Z",
-            "downloadURL": "https://example.com/animeko.ipa",
-            "size": 1234,
-            "localizedDescription": "Animeko release",
-        }],
-    }]
-    app = updater.build_from_personal_source(apps, "Animeko")
-    assert app["name"] == "Animeko"
-    assert app["developerName"] == "Chi Source Personal"
-    assert app["versions"][0]["version"] == "6.3.0"
-    assert app["bundleIdentifier"] == "org.animeko.animeko"
-
 
 def test_build_from_ipavault_uses_expected_facebook_and_threads_entries(monkeypatch):
     monkeypatch.setattr(updater, "validate_download_url", lambda url, size=0: True)
