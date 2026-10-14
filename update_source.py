@@ -490,16 +490,6 @@ def build_single_app(target_name, old_apps):
         return built or find_previous_app({"apps": old_apps}, name=target_name)
 
     if target_name == SIDELOADLABS_DISPLAY_NAME:
-        personal_data = JSON_PROVIDER.fetch(CHI_PERSONAL_SOURCE_URL)
-        personal_apps = ensure_list(personal_data, "apps")
-        for target in PERSONAL_SOURCE_APPS:
-            built = build_from_personal_source(personal_apps, target)
-            if built: apps.append(built)
-            else:
-                previous = find_previous_app({"apps": old_apps}, name=target)
-                if previous: apps.append(previous)
-                else: print(f"❌ {target}: update failed and no previous version available")
-
         sideload_apps = JSON_PROVIDER.fetch(SIDeloadLABS_SOURCE_URL)
         built = build_from_sideloadlabs(ensure_list(sideload_apps, "apps"))
         return built or find_previous_app({"apps": old_apps}, name=target_name)
@@ -527,6 +517,16 @@ def update_source_apps(old_source, old_apps, target_name=None):
             else:
                 match = next((app for app in remote_apps or [] if isinstance(app, dict) and app.get("name") == target), None)
                 built = build_from_apptesters(match) if match else None
+            if built: apps.append(built)
+            else:
+                previous = find_previous_app({"apps": old_apps}, name=target)
+                if previous: apps.append(previous)
+                else: print(f"❌ {target}: update failed and no previous version available")
+
+        personal_data = JSON_PROVIDER.fetch(CHI_PERSONAL_SOURCE_URL)
+        personal_apps = ensure_list(personal_data, "apps")
+        for target in PERSONAL_SOURCE_APPS:
+            built = build_from_personal_source(personal_apps, target)
             if built: apps.append(built)
             else:
                 previous = find_previous_app({"apps": old_apps}, name=target)
