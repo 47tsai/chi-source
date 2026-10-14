@@ -10,7 +10,7 @@
 
 | App 類別 | 候選版本與來源 | 比較結果 | 建議保留 |
 |---|---|---|---|
-| **Spotify** | IPA Vault Vitrine 9.1.90（10/13）；EeveeSpotify 9.1.90（10/08）；自有 EeveeSpotify Reincarnated 9.1.88（10/05） | Vitrine 本體較新版本與更新日期領先；Eevee 分支則更接近你現有版本 | **Spotify (Vitrine) 9.1.90**，依版本與更新時間優先；若重視 EeveeSpotify 相容性，則留 IPA Vault EeveeSpotify 9.1.90 |
+| **Spotify** | IPA Vault Vitrine 9.1.90（10/13）；IPA Vault EeveeSpotify 9.1.90（10/08） | Vitrine 本體版本與更新日期較新；Eevee 分支可作為另一個版本選項 | **Spotify (Vitrine) 9.1.90**，依版本與更新時間優先；若重視 EeveeSpotify 相容性，則選 IPA Vault EeveeSpotify 9.1.90 |
 | **Reddit** | MoeReddit 2026.41.0（10/13）；IPA Vault RedditFilter 2026.41.0（10/13） | Reddit 本體版本與日期相同，修改功能相近但不完全相同 | **先保留 MoeReddit** 作為單一代表；若你偏好 RedditFilter 的過濾功能再換 |
 | **Twitch** | Moe TwitchControl／Tweach 31.5（10/08）；IPA Vault Twitch 31.4（9/29） | Moe 版本較新，更新日期也較晚 | **Moe Twitch 31.5** |
 | **Infuse** | IPA Vault Infuse Plus 8.5.7（10/13）；Moe Infuse Plus 8.5.6（9/30） | IPA Vault 本體版本較新，更新日期較晚 | **IPA Vault Infuse Plus 8.5.7** |
