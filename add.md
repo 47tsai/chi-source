@@ -30,78 +30,78 @@
 
 | App | 版本 | 最後更新時間 | 功能簡介 |
 |---|---|---|---|
-| Carrot | 6.5 | 2026-03-26 | Carrot 6.5 Pro Moe with Working Widgets for iOS, listed on Moe's App Hub with version, file size, and install details. L... |
-| Webssh | 33.0 | 2026-09-30 | Webssh 33.0 Pro for iOS. |
+| Carrot | 6.5 | 2026-03-26 | 提供 Carrot 6.5 Pro 修改版及可用的小工具。 |
+| Webssh | 33.0 | 2026-09-30 | 提供 iOS 版 WebSSH Pro，用於 SSH、SFTP 與伺服器管理。 |
 
 ## IPA Vault
 
 | App | 版本 | 最後更新時間 | 功能簡介 |
 |---|---|---|---|
-| Discord (RainTweak) | 349.0 | 2026-10-13 | Discord 349.0 with RainTweak 0.10.0 |
-| iMe (MxGram) | 12.8.1 | 2026-09-01 | iMe 12.8.1 with MxGram 1.0.0 |
-| iMe (iQTele) | 12.8.1 | 2026-09-05 | iMe 12.8.1 with iQTele 1.2 |
-| Messenger (Flow) | 582.0.0 | 2026-10-07 | Messenger 582.0.0 with Flow 1.0 |
-| Messenger (Login) | 523.0.0 | 2026-09-01 | Messenger 523.0.0 login build |
-| Messenger (MSGPlusX) | 582.0.0 | 2026-10-07 | Messenger 582.0.0 with MSGPlusX 1.1 |
-| Nagram (MxGram) | 13.0.1 | 2026-10-13 | Nagram 13.0.1 with MxGram 1.0.0 |
-| Nagram (iQTele) | 13.0.1 | 2026-10-13 | Nagram 13.0.1 with iQTele 1.4 |
-| Nagram (TGExtra) | 13.0.1 | 2026-10-13 | Nagram 13.0.1 with TGExtra 1.7.7 |
-| SoundCloud (NexaSC) (iOS 16.0-16.3) | 7.68.1 | 2026-09-01 | SoundCloud 7.68.1 with NexaSC beta 4 |
-| SoundCloud (NexaSC) | 8.82.0 | 2026-10-11 | SoundCloud 8.82.0 with NexaSC beta 4 |
-| Swiftgram (MxGram) | 13.0 | 2026-10-13 | Swiftgram 13.0 with MxGram 1.0.0 |
-| Swiftgram (iQTele) | 12.9.4 | 2026-10-03 | Swiftgram 12.9.4 with iQTele 1.4 |
-| Swiftgram (TGExtra) | 13.0 | 2026-10-13 | Swiftgram 13.0 with TGExtra 1.7.7 |
-| Telegram (MxGram) | 13.0 | 2026-10-09 | Telegram 13.0 with MxGram 1.0.0 |
-| Telegram (iQTele) | 13.0 | 2026-10-09 | Telegram 13.0 with iQTele 1.4 |
-| Telegram (TGExtra) | 13.0 | 2026-10-09 | Telegram 13.0 with TGExtra 1.7.8 |
-| TikTok (Infinitok) | 47.1.0 | 2026-10-07 | TikTok 47.1.0 with Infinitok 0.0.2 |
-| Turrit (MxGram) | 1.5.5 | 2026-10-09 | Turrit 1.5.5 with MxGram 1.0.0 |
-| Turrit (iQTele) | 1.5.5 | 2026-10-09 | Turrit 1.5.5 with iQTele 1.4 |
-| Turrit (TGExtra) | 1.5.5 | 2026-10-09 | Turrit 1.5.5 with TGExtra 1.7.7 |
-| Twitter NFB | 12.33 | 2026-10-11 | Twitter 12.33 with NFB 7.1.1 |
-| Twitter NFB + TWI | 12.33 | 2026-10-11 | Twitter 12.33 with NFB 7.1.1 + TWIGalaxy 1.14 |
-| X NFB | 12.33 | 2026-10-11 | X 12.33 with NFB 7.1.1 |
-| X NFB + TWI | 12.33 | 2026-10-11 | X 12.33 with NFB 7.1.1 + TWIGalaxy 1.14 |
+| Discord (RainTweak) | 349.0 | 2026-10-13 | 為 Discord 加入 RainTweak 修改功能。 |
+| iMe (MxGram) | 12.8.1 | 2026-09-01 | 為 iMe Telegram 客戶端加入 MxGram 擴充功能。 |
+| iMe (iQTele) | 12.8.1 | 2026-09-05 | 為 iMe Telegram 客戶端加入 iQTele 擴充功能。 |
+| Messenger (Flow) | 582.0.0 | 2026-10-07 | 為 Messenger 加入 Flow 修改功能。 |
+| Messenger (Login) | 523.0.0 | 2026-09-01 | 提供可用於登入的 Messenger 修改版。 |
+| Messenger (MSGPlusX) | 582.0.0 | 2026-10-07 | 為 Messenger 加入 MSGPlusX 擴充功能。 |
+| Nagram (MxGram) | 13.0.1 | 2026-10-13 | 為 Nagram Telegram 客戶端加入 MxGram 擴充功能。 |
+| Nagram (iQTele) | 13.0.1 | 2026-10-13 | 為 Nagram Telegram 客戶端加入 iQTele 擴充功能。 |
+| Nagram (TGExtra) | 13.0.1 | 2026-10-13 | 為 Nagram Telegram 客戶端加入 TGExtra 擴充功能。 |
+| SoundCloud (NexaSC) (iOS 16.0-16.3) | 7.68.1 | 2026-09-01 | 為舊版 iOS 的 SoundCloud 加入 NexaSC 修改功能。 |
+| SoundCloud (NexaSC) | 8.82.0 | 2026-10-11 | 為 SoundCloud 加入 NexaSC 修改功能。 |
+| Swiftgram (MxGram) | 13.0 | 2026-10-13 | 為 Swiftgram Telegram 客戶端加入 MxGram 擴充功能。 |
+| Swiftgram (iQTele) | 12.9.4 | 2026-10-03 | 為 Swiftgram Telegram 客戶端加入 iQTele 擴充功能。 |
+| Swiftgram (TGExtra) | 13.0 | 2026-10-13 | 為 Swiftgram Telegram 客戶端加入 TGExtra 擴充功能。 |
+| Telegram (MxGram) | 13.0 | 2026-10-09 | 為 Telegram 加入 MxGram 擴充功能。 |
+| Telegram (iQTele) | 13.0 | 2026-10-09 | 為 Telegram 加入 iQTele 擴充功能。 |
+| Telegram (TGExtra) | 13.0 | 2026-10-09 | 為 Telegram 加入 TGExtra 擴充功能。 |
+| TikTok (Infinitok) | 47.1.0 | 2026-10-07 | 為 TikTok 加入 Infinitok 修改功能。 |
+| Turrit (MxGram) | 1.5.5 | 2026-10-09 | 為 Turrit Telegram 客戶端加入 MxGram 擴充功能。 |
+| Turrit (iQTele) | 1.5.5 | 2026-10-09 | 為 Turrit Telegram 客戶端加入 iQTele 擴充功能。 |
+| Turrit (TGExtra) | 1.5.5 | 2026-10-09 | 為 Turrit Telegram 客戶端加入 TGExtra 擴充功能。 |
+| Twitter NFB | 12.33 | 2026-10-11 | 為 Twitter 加入 NFB 功能修改套件。 |
+| Twitter NFB + TWI | 12.33 | 2026-10-11 | 為 Twitter 加入 NFB 與 TWIGalaxy 兩種修改套件。 |
+| X NFB | 12.33 | 2026-10-11 | 為 X 加入 NFB 功能修改套件。 |
+| X NFB + TWI | 12.33 | 2026-10-11 | 為 X 加入 NFB 與 TWIGalaxy 兩種修改套件。 |
 
 ## AltGallery
 
 | App | 版本 | 最後更新時間 | 功能簡介 |
 |---|---|---|---|
-| AniBaka | 5.2.1（build 1007） | 2026-10-07 | AniBaka 是一个基于 Flutter 的跨平台番剧聚合与媒体播放客户端，支持多番剧源、弹幕、字幕、离线缓存与本地媒体库，并提供动漫实时超分辨率画质增强。 |
-| AnimeFlow | 2.6.3 | 2026-10-12 | AnimeFlow 是一个跨平台动漫视频播放应用，支持 Android、iOS、Windows、macOS 与 Linux。内置多数据源与自定义 XPath 爬虫配置，支持基于 Anime4K 的实时视频 4K 超分辨率，对接 Bangumi 同步收藏与追番数据，并支持多平台弹幕源与丰富的弹幕设置。 |
-| ARMSX2 | nightly-20261011 | 2026-10-11 | A free and open-source PlayStation 2 (PS2) emulator based on PCSX2, with native ARM64 JIT recompilers. Play PS2 games on your phone, PC, or gaming handh... |
-| Doer | 1.8.6 | 2026-10-10 | A native iOS client for Linux.do — UIKit + Swift, no SwiftUI in the main app. |
-| DolphiniOS | 5.0.0b6 | 2026-06-20 | Dolphin for iOS, reborn. A GameCube and Wii emulator for iPhone and iPad. |
-| DukeX | 1.0.2 | 2026-06-30 | DukeX is an experimental iOS-focused frontend for xemu. It embeds the xemu core in a native Swift shell and presents the Vulkan renderer through MoltenV... |
-| EhPanda | 2.8.1 | 2026-07-20 | EhPanda is an unofficial E-Hentai app for iOS & iPadOS built with SwiftUI & TCA. It supports almost all E-Hentai gallery categories, gallery browsing wi... |
-| Fathom | 1.0.0 | 2026-09-14 | An x86-64 PC emulator for iOS. Fathom runs x86-64 Linux programs on an iPhone or iPad by translating them to ARM64 as they execute, using FEXCore - the ... |
-| Iridium | 0.2.0 | 2026-10-04 | An experimental iPhone and iPad Windows-game runtime, with a native game library and touch, keyboard, mouse, and controller integration. Requires iOS 18... |
-| iTorrent | 2.2.0-1 | 2026-07-19 | iTorrent is an ordinary torrent client for iOS with Files app support and much more.  What can this app do:  • Download in the background • Live Activit... |
-| KMusic | 2.3.0 | 2026-03-12 | 基于 SwiftUI 开发的多源音乐聚合播放器，支持 iOS/macOS。内置酷我、酷狗、QQ 音乐、网易云、咪咕等多平台音源，支持 LRC 歌词同步、全局搜索、后台播放与深色主题，并可通过 JS 脚本导入自定义音源。 |
-| Kumone | 0.3.20 | 2026-10-03 | Kumone（雲の音）— native NetEase Cloud Music client for iOS. Talks directly to NetEase's real API with no third-party server: QR-code login, gray-track unblo... |
-| LiveContainer+SideStore | nightly | 2026-09-18 | An app launcher that runs iOS apps without actually installing them. This build of LiveContainer comes with a built-in SideStore for refreshing your apps. |
-| Madeira | 0.1.3 | 2026-10-03 | Madeira runs unmodified x86-64 Windows PC games inside a single jailed iOS app: FEX-Emu translates the game's x86 code to ARM64 as it runs, Wine 11.4 bu... |
-| Mangayomi | 0.9.9 | 2026-10-12 | Mangayomi is an open-source Flutter app for reading manga, novels, and watching anime across multiple platforms. |
-| ManicEMU | 2.0.1 | 2026-09-18 | All-in-one retro game emulator for iOS, bringing console, arcade, computer, and mobile Java systems into one clean app with saves, cheats, custom skins,... |
-| MiniWatts | 1.5.1 | 2026-10-13 | An iPhone battery and charging monitor built on Apple's private APIs: the charger's real watts, how much of that reaches the cell, where the rest goes a... |
-| MoviePilotLite | 1.2.5 | 2026-10-09 | 基于 MoviePilot 的 Flutter 跨端客户端，对接 MoviePilot v2 API，在手机上完成订阅、搜索、下载、整理与系统运维等常用操作。 |
-| Musly | 2.0.2 | 2026-08-26 | Musly is a free Navidrome client and Subsonic music player with an Apple Music-inspired interface. Stream your self-hosted library from Navidrome, Subso... |
-| NeoStation iOS | 0.0.7 | 2026-10-13 | An independently maintained iOS/iPadOS fork of NeoStation, with embedded Dolphin, ARMSX2, RPCS3, Dusklight and KartPad runtimes alongside RetroArch and ... |
-| Novella | 2.5.0 | 2026-09-23 | 使用 React Native 构建的轻书架第三方客户端，面向 iOS、iPadOS。 |
-| Opaline | 1.12.0 | 2026-09-10 | A lightweight YouTube client with SponsorBlock, Return YouTube Dislike, and up to 1080p playback. No ads, no tracking, no dependencies. |
-| Orchard | 0.2 | 2026-09-25 | Boots a real arm64 macOS Ventura guest on iPhone through Apple's own chain (AVPBooter, iBoot and XNU) on QEMU's apple-vm machine, with the GPU drawn thr... |
-| Pixiv-SwiftUI | 0.16.2 | 2026-10-11 | 基于 SwiftUI 开发的 Pixiv 第三方客户端，支持 iOS/iPadOS/macOS。提供插画、漫画与小说的推荐、排行榜、搜索与收藏，内置评论系统、批量下载、数据导入导出、深色模式与主题自定义。 |
-| Playport | 0.4.0 | 2026-10-08 | Playport runs Windows games, 64-bit and 32-bit, on a stock, non-jailbroken iPhone: install a game from your library onto the phone, pick up a controller... |
-| PSX3IOS | 0.2.7-beta | 2026-09-01 | A PlayStation 3 emulator for iPhone and iPad, built on RPCS3. Real games boot and play — the whole emulator core is exposed, with community game patches... |
-| PureLive | 3.1.19 | 2026-10-10 | 纯粹直播（Pure Live）是一款基于 Flutter 的开源第三方多平台直播聚合播放器，支持 Bilibili、虎牙、斗鱼、快手、抖音、网易 CC、Twitch 等平台，以及自定义 M3U/M3U8 直播源。 |
-| Roam Control | 0.9.7 | 2026-10-08 | Set a fixed reported location, preview and simulate Apple Maps walking routes, and save favourites and history — all from one map. Requires iOS 27 or ne... |
-| SceneBox | 1.0.4 | 2026-09-23 | Torrent streaming client for iOS, iPadOS, tvOS and Mac (Catalyst), written in SwiftUI. Streams come from Stremio-compatible addons and play through a ve... |
-| SpotiFLAC | 5.1.1 | 2026-10-11 | SpotiFLAC is a Flutter music app built around installable extensions: an extension supplies the metadata and the audio downloads for one provider, so so... |
-| TiebaPure | 1.4.15 | 2026-10-10 | 原生 SwiftUI 构建的非官方贴吧 iOS 客户端。未登录访客即可浏览首页推荐、进吧与吧内列表、帖子详情与楼中楼、搜索、图片缩放与视频播放；登录后支持消息、关注与粉丝、收藏帖子（与官方客户端同步）、每日签到、点赞与发帖回复。另有关键词/用户/贴吧屏蔽、浏览历史与阅读位置恢复、iPad 双栏布局，以及... |
-| Tsumiru | 1.4.0 | 2026-10-13 | Tsumiru is a native client for reading manga & manhwa from a Suwayomi-Server instance, built for long webtoon binges. Offline downloads with an on-devic... |
-| UTM | 4.7.5 | 2026-01-03 | UTM is a full featured virtual machine host for iOS. In short, it allows you to run Windows, Android, and more on your iPhone and iPad.  This version re... |
-| VeneraNext | 1.18.0（build 234） | 2026-10-14 | 基于 Flutter 的跨平台漫画阅读器，支持本地漫画、WebDAV 漫画源与第三方网络漫画源，支持 Android、iOS、Windows、Linux、macOS 平台。 |
-| ZhihuMinusMinus | 0.9.0 | 2026-10-13 | 基于 React Native (Expo) 构建的轻量级第三方知乎客户端，无广告，支持多账号切换、游客模式、全局主题色自定义与深色模式，可查看热榜、推荐、回答、文章、想法与评论区，并支持从 GitHub Releases 自动更新。 |
+| AniBaka | 5.2.1（build 1007） | 2026-10-07 | 整合多個動畫來源，支援彈幕、字幕、離線快取與本機媒體播放。 |
+| AnimeFlow | 2.6.3 | 2026-10-12 | 跨平台動畫播放器，支援多來源、自訂爬蟲、彈幕與 Anime4K 即時升頻。 |
+| ARMSX2 | nightly-20261011 | 2026-10-11 | 以 PCSX2 為基礎的 PS2 模擬器，可在手機與電腦上遊玩 PS2 遊戲。 |
+| Doer | 1.8.6 | 2026-10-10 | Linux.do 論壇的原生 iOS 客戶端。 |
+| DolphiniOS | 5.0.0b6 | 2026-06-20 | 在 iPhone 與 iPad 上模擬遊玩 GameCube 和 Wii 遊戲。 |
+| DukeX | 1.0.2 | 2026-06-30 | 以 xemu 為核心的實驗性 iOS Xbox 模擬器前端。 |
+| EhPanda | 2.8.1 | 2026-07-20 | 非官方 E-Hentai 閱讀器，支援瀏覽與管理畫廊內容。 |
+| Fathom | 1.0.0 | 2026-09-14 | 透過 FEXCore 將 x86-64 程式轉譯為 ARM64，讓 iOS 裝置執行 Linux 程式。 |
+| Iridium | 0.2.0 | 2026-10-04 | 在 iPhone 與 iPad 上執行 Windows 遊戲，並支援觸控、鍵盤、滑鼠與控制器。 |
+| iTorrent | 2.2.0-1 | 2026-07-19 | 支援背景下載與檔案 App 整合的 iOS BT 下載工具。 |
+| KMusic | 2.3.0 | 2026-03-12 | 整合多個音樂平台音源，支援同步歌詞、搜尋、背景播放與自訂音源。 |
+| Kumone | 0.3.20 | 2026-10-03 | 直接連接網易雲音樂官方 API 的原生客戶端，支援登入與歌曲播放。 |
+| LiveContainer+SideStore | nightly | 2026-09-18 | 可在單一容器中啟動多款 iOS App，並內建 SideStore 以更新應用程式。 |
+| Madeira | 0.1.3 | 2026-10-03 | 透過 FEX-Emu 與 Wine 在未越獄的 iOS 裝置上執行 x86-64 Windows 遊戲。 |
+| Mangayomi | 0.9.9 | 2026-10-12 | 跨平台漫畫、小說與動畫閱讀播放工具。 |
+| ManicEMU | 2.0.1 | 2026-09-18 | 整合多種家用主機、街機、電腦與 Java 手機平台的復古遊戲模擬器。 |
+| MiniWatts | 1.5.1 | 2026-10-13 | 利用 Apple 私有 API 顯示 iPhone 充電功率、電池輸入功率與充電效率。 |
+| MoviePilotLite | 1.2.5 | 2026-10-09 | MoviePilot 跨平台客戶端，可用手機管理訂閱、搜尋、下載與媒體整理。 |
+| Musly | 2.0.2 | 2026-08-26 | Navidrome 與 Subsonic 音樂伺服器的播放器，提供自架音樂串流。 |
+| NeoStation iOS | 0.0.7 | 2026-10-13 | 整合多款主機模擬器與 RetroArch 的 iOS 遊戲模擬平台。 |
+| Novella | 2.5.0 | 2026-09-23 | 以 React Native 打造的 iOS 與 iPadOS 輕量電子書架第三方客戶端。 |
+| Opaline | 1.12.0 | 2026-09-10 | 輕量 YouTube 客戶端，支援 SponsorBlock、倒讚數顯示與最高 1080p 播放。 |
+| Orchard | 0.2 | 2026-09-25 | 透過 QEMU 在 iPhone 上啟動 macOS Ventura 虛擬機。 |
+| Pixiv-SwiftUI | 0.16.2 | 2026-10-11 | Pixiv 第三方客戶端，支援插畫、漫畫、小說瀏覽、搜尋、收藏與批次下載。 |
+| Playport | 0.4.0 | 2026-10-08 | 可在未越獄的 iPhone 上安裝並執行 Windows 遊戲，支援控制器操作。 |
+| PSX3IOS | 0.2.7-beta | 2026-09-01 | 以 RPCS3 為基礎的 PS3 模擬器，支援在 iPhone 與 iPad 上執行遊戲。 |
+| PureLive | 3.1.19 | 2026-10-10 | 整合多個直播平台與自訂串流網址的開源直播播放器。 |
+| Roam Control | 0.9.7 | 2026-10-08 | 可設定定位回報位置、預覽 Apple 地圖步行路線並管理收藏與歷史紀錄。 |
+| SceneBox | 1.0.4 | 2026-09-23 | 支援 Stremio 相容外掛的影音串流工具，可透過播放器播放內容。 |
+| SpotiFLAC | 5.1.1 | 2026-10-11 | 透過可安裝擴充套件取得音樂資訊並下載音訊的 Flutter 音樂工具。 |
+| TiebaPure | 1.4.15 | 2026-10-10 | 無廣告第三方百度貼吧客戶端，支援瀏覽、搜尋、互動、內容過濾與閱讀進度保存。 |
+| Tsumiru | 1.4.0 | 2026-10-13 | 連接 Suwayomi-Server 的漫畫與韓漫閱讀器，支援離線下載。 |
+| UTM | 4.7.5 | 2026-01-03 | iOS 虛擬機工具，可在 iPhone 與 iPad 上執行 Windows、Android 等系統。 |
+| VeneraNext | 1.18.0（build 234） | 2026-10-14 | 跨平台漫畫閱讀器，支援本機漫畫、WebDAV 與第三方線上漫畫來源。 |
+| ZhihuMinusMinus | 0.9.0 | 2026-10-13 | 無廣告第三方知乎客戶端，支援多帳號、免登入瀏覽、主題自訂與內容閱讀。 |
 
 ## 原始來源
 
