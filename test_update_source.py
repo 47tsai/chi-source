@@ -303,9 +303,6 @@ def test_get_latest_special_release_uses_supplied_releases(monkeypatch):
     )
     assert result == releases[0]
 
-
-
-
 def test_build_from_ipavault_uses_expected_facebook_and_threads_entries(monkeypatch):
     monkeypatch.setattr(updater, "validate_download_url", lambda url, size=0: True)
     apps = [
