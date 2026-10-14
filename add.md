@@ -106,25 +106,6 @@
 | YouProEXTRA | 21.41.5（build 21.41.5） | 2026-10-11 | YouPro mod of YouTube for iOS. Includes no ads, background playback, downloads, iSponsorBlock, PiP, and a host of customizable tweaks. |
 | ZhihuMinusMinus | 0.9.0 | 2026-10-13 | 基于 React Native (Expo) 构建的轻量级第三方知乎客户端，无广告，支持多账号切换、游客模式、全局主题色自定义与深色模式，可查看热榜、推荐、回答、文章、想法与评论区，并支持从 GitHub Releases 自动更新。 |
 
-## Chi Source（自己的來源）
-
-| App | 版本 | 最後更新時間 | 功能簡介 |
-|---|---|---|---|
-| YTKACE | 21.41.5 | 2026-10-11 | An open-source YouTube enhancement for iOS. |
-| MaxMusic | 9.34.4 | 2026-08-30 | MaxMusic is a fork of YTMusicUltimate with additional tweaks for YouTube Music on iOS. |
-| Facebook | 582.0.0 | 2026-10-09 | Facebook 582.0.0 with iQFace 1.2 |
-| Threads | 451.0 | 2026-10-13 | Threads 451.0 with ThreadSaver |
-| Instagram | 433.0.0 | 2026-06-10 | Injected with Premium |
-
-## Chi Source Personal（自己的來源）
-
-| App | 版本 | 最後更新時間 | 功能簡介 |
-|---|---|---|---|
-| SpooferPro Pokemon GO | 0.431.1（build 0.736） | 2026-10-12 | SPOOF INTO THE World of PoGO SpooferPro for PoGO is an enhanced edition of the PoGO app, adding a joystick and ability to teleport! It also includes a l... |
-| Photos Backup | 0.3.7 | 2026-09-20 | ## New  - **The Google Photos app now counts what this app backs up.** ([#24](https://github.com/g8row/PhotosBackup/pull/24), thanks @saileshbro) Upload... |
-| EnsWilde | 3.1.3（build EnsWilde3.1.3） | 2026-02-25 | An experimental on-device iOS customization app. Features and compatibility depend on the iOS version; back up your device before use. |
-| StikDebug | 3.1.14 | 2026-10-12 | An on-device debugger and developer toolbox for iOS versions 17.4+ powered by idevice.  Note: Requires LocalDevVPN, cannot be natively used inside LiveC... |
-
 ## 原始來源
 
 - [Moe AltStore](https://raw.githubusercontent.com/MountainofPenguin/moe-altstore/main/apps.json)
