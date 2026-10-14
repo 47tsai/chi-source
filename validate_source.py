@@ -5,10 +5,10 @@ from datetime import datetime
 from pathlib import Path
 from urllib.parse import urlparse
 
-from update_source import GITHUB_APPS, TARGET_APPS
+from update_source import GITHUB_APPS, PERSONAL_SOURCE_APPS, TARGET_APPS
 
 FILENAME = "apps.json"
-EXPECTED_APPS = {app["name"] for app in GITHUB_APPS} | set(TARGET_APPS) | {"EeveeSpotify Reincarnated"}
+EXPECTED_APPS = {app["name"] for app in GITHUB_APPS} | set(TARGET_APPS) | set(PERSONAL_SOURCE_APPS) | {"EeveeSpotify Reincarnated"}
 
 REQUIRED_ROOT_FIELDS = {
     "name", "identifier", "sourceURL", "subtitle", "description",
