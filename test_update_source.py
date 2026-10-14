@@ -373,6 +373,22 @@ def test_full_update_routes_facebook_and_threads_to_ipavault(monkeypatch):
             "versionDate": "2026-10-13",
             "size": 456,
         },
+        {
+            "name": "Instagram (RyukGram)",
+            "bundleIdentifier": "com.burbn.instagram",
+            "downloadURL": "https://example.com/instagram.ipa",
+            "version": "451.0.0",
+            "versionDate": "2026-10-13",
+            "size": 789,
+        },
+        {
+            "name": "YTMUltimate+",
+            "bundleIdentifier": "com.google.ios.youtubemusic.ytmultimateplus",
+            "downloadURL": "https://example.com/ytmusic.ipa",
+            "version": "9.41.2",
+            "versionDate": "2026-10-11",
+            "size": 987,
+        },
     ]
     instagram_source = [
         {
@@ -397,7 +413,8 @@ def test_full_update_routes_facebook_and_threads_to_ipavault(monkeypatch):
 
     assert by_name["Facebook"]["developerName"] == "IPA Vault"
     assert by_name["Threads"]["developerName"] == "IPA Vault"
-    assert by_name["Instagram"]["developerName"] == "AppTesters"
+    assert by_name["Instagram"]["developerName"] == "IPA Vault"
+    assert by_name["YouTube Music"]["developerName"] == "IPA Vault"
 
 
 
