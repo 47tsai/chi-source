@@ -181,7 +181,7 @@ def test_github_failure_falls_back_to_previous(monkeypatch):
     assert result == old_apps
 
 
-def test_apptesters_failure_falls_back_to_previous(monkeypatch):
+def test_ipavault_failure_falls_back_to_previous(monkeypatch):
     old_apps = [
         {
             "name": "Facebook",
@@ -189,7 +189,7 @@ def test_apptesters_failure_falls_back_to_previous(monkeypatch):
             "versions": [{"version": "570.0.0"}],
         }
     ]
-    monkeypatch.setattr(updater, "fetch_remote", lambda: None)
+    monkeypatch.setattr(updater.JSON_PROVIDER, "fetch", lambda url: None)
     result = updater.update_source_apps({}, old_apps, "Facebook")
     assert result == old_apps
 
@@ -302,4 +302,100 @@ def test_get_latest_special_release_uses_supplied_releases(monkeypatch):
         releases,
     )
     assert result == releases[0]
+
+
+def test_build_from_ipavault_uses_expected_facebook_and_threads_entries(monkeypatch):
+    monkeypatch.setattr(updater, "validate_download_url", lambda url, size=0: True)
+    apps = [
+        {
+            "name": "Facebook (iQFace)",
+            "bundleIdentifier": "com.facebook.Facebook",
+            "downloadURL": "https://example.com/facebook.ipa",
+            "iconURL": "https://example.com/facebook.png",
+            "localizedDescription": "Facebook with iQFace",
+            "versionDescription": "iQFace build",
+            "version": "582.0.0",
+            "versionDate": "2026-10-09",
+            "size": 123,
+        },
+        {
+            "name": "Threads (ThreadSaver)",
+            "bundleIdentifier": "com.burbn.barcelona",
+            "downloadURL": "https://example.com/threads.ipa",
+            "iconURL": "https://example.com/threads.png",
+            "localizedDescription": "Threads with ThreadSaver",
+            "versionDescription": "ThreadSaver build",
+            "version": "451.0",
+            "versionDate": "2026-10-13",
+            "size": 456,
+        },
+    ]
+    facebook = updater.build_from_ipavault(apps, "Facebook")
+    threads = updater.build_from_ipavault(apps, "Threads")
+    assert facebook["name"] == "Facebook"
+    assert facebook["bundleIdentifier"] == "com.facebook.Facebook"
+    assert facebook["versions"][0]["version"] == "582.0.0"
+    assert facebook["developerName"] == "IPA Vault"
+    assert threads["name"] == "Threads"
+    assert threads["bundleIdentifier"] == "com.burbn.barcelona"
+    assert threads["versions"][0]["version"] == "451.0"
+
+
+def test_build_from_ipavault_rejects_unexpected_bundle_id(monkeypatch):
+    monkeypatch.setattr(updater, "validate_download_url", lambda url, size=0: True)
+    app = {
+        "name": "Facebook (Facebook Plus)",
+        "bundleIdentifier": "com.facebook.Facebook.facebookplus",
+        "downloadURL": "https://example.com/facebook.ipa",
+        "version": "582.0.0",
+        "versionDate": "2026-10-09",
+        "size": 123,
+    }
+    assert updater.build_from_ipavault([app], "Facebook") is None
+
+
+def test_full_update_routes_facebook_and_threads_to_ipavault(monkeypatch):
+    monkeypatch.setattr(updater, "validate_download_url", lambda url, size=0: True)
+    vault_apps = [
+        {
+            "name": "Facebook (iQFace)",
+            "bundleIdentifier": "com.facebook.Facebook",
+            "downloadURL": "https://example.com/facebook.ipa",
+            "version": "582.0.0",
+            "versionDate": "2026-10-09",
+            "size": 123,
+        },
+        {
+            "name": "Threads (ThreadSaver)",
+            "bundleIdentifier": "com.burbn.barcelona",
+            "downloadURL": "https://example.com/threads.ipa",
+            "version": "451.0",
+            "versionDate": "2026-10-13",
+            "size": 456,
+        },
+    ]
+    instagram_source = [
+        {
+            "name": "Instagram",
+            "bundleIdentifier": "com.burbn.instagram",
+            "downloadURL": "https://example.com/instagram.ipa",
+            "version": "400.0.0",
+            "versionDate": "2026-10-10",
+            "size": 789,
+        }
+    ]
+    monkeypatch.setattr(updater, "build_from_github", lambda config: None)
+    monkeypatch.setattr(updater, "fetch_remote", lambda: instagram_source)
+    monkeypatch.setattr(
+        updater.JSON_PROVIDER,
+        "fetch",
+        lambda url: {"apps": vault_apps} if url == updater.IPA_VAULT_SOURCE_URL else None,
+    )
+
+    result = updater.update_source_apps({}, [])
+    by_name = {app["name"]: app for app in result}
+
+    assert by_name["Facebook"]["developerName"] == "IPA Vault"
+    assert by_name["Threads"]["developerName"] == "IPA Vault"
+    assert by_name["Instagram"]["developerName"] == "AppTesters"
 
