@@ -62,8 +62,6 @@
 | Twitter NFB + TWI | 12.33 | 2026-10-11 | Twitter 12.33 with NFB 7.1.1 + TWIGalaxy 1.14 |
 | X NFB | 12.33 | 2026-10-11 | X 12.33 with NFB 7.1.1 |
 | X NFB + TWI | 12.33 | 2026-10-11 | X 12.33 with NFB 7.1.1 + TWIGalaxy 1.14 |
-| YTMUltimate+ | 9.41.2 | 2026-10-11 | YouTube Music 9.41.2 with YTMUltimate+ 2.4.1  Added Tweaks: YTMABConfig, YouMusicPIP, VolumeBoostYT, ReturnYouTubeMusicDislike |
-| YTMUltimate+ (No PiP) | 9.41.2 | 2026-10-11 | YouTube Music 9.41.2 with YTMUltimate+ 2.4.1 (No PiP)  Added Tweaks: YTMABConfig, VolumeBoostYT, ReturnYouTubeMusicDislike |
 
 ## AltGallery
 
@@ -103,7 +101,6 @@
 | Tsumiru | 1.4.0 | 2026-10-13 | Tsumiru is a native client for reading manga & manhwa from a Suwayomi-Server instance, built for long webtoon binges. Offline downloads with an on-devic... |
 | UTM | 4.7.5 | 2026-01-03 | UTM is a full featured virtual machine host for iOS. In short, it allows you to run Windows, Android, and more on your iPhone and iPad.  This version re... |
 | VeneraNext | 1.18.0（build 234） | 2026-10-14 | 基于 Flutter 的跨平台漫画阅读器，支持本地漫画、WebDAV 漫画源与第三方网络漫画源，支持 Android、iOS、Windows、Linux、macOS 平台。 |
-| YouProEXTRA | 21.41.5（build 21.41.5） | 2026-10-11 | YouPro mod of YouTube for iOS. Includes no ads, background playback, downloads, iSponsorBlock, PiP, and a host of customizable tweaks. |
 | ZhihuMinusMinus | 0.9.0 | 2026-10-13 | 基于 React Native (Expo) 构建的轻量级第三方知乎客户端，无广告，支持多账号切换、游客模式、全局主题色自定义与深色模式，可查看热榜、推荐、回答、文章、想法与评论区，并支持从 GitHub Releases 自动更新。 |
 
 ## 原始來源
