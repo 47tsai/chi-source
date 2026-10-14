@@ -96,10 +96,13 @@ TARGET_APPS = ["Facebook", "Threads", "Instagram"]
 SIDELOADLABS_APP = "EeveeSpotifyReincarnated(PATCHED)"
 SIDELOADLABS_DISPLAY_NAME = "EeveeSpotify Reincarnated"
 APP_STYLE = {
-    "Facebook": {"color": "78A5E3", "subtitle": "IPA Vault"},
-    "Threads": {"color": "858585", "subtitle": "IPA Vault"},
-    "Instagram": {"color": "DC8FA1", "subtitle": "AppTesters"},
-    "EeveeSpotify Reincarnated": {"color": "669878", "subtitle": "SideloadLabs"},
+    "Facebook": {"color": "78A5E3", "subtitle": "Facebook with iQFace"},
+    "Threads": {"color": "858585", "subtitle": "Threads with ThreadSaver"},
+    "Instagram": {"color": "DC8FA1", "subtitle": "Instagram injected with Premium"},
+    "EeveeSpotify Reincarnated": {
+        "color": "669878",
+        "subtitle": "This tweak makes Spotify think you have a Premium subscription, granting free listening, just like Spotilife, and provides some additional features like custom lyrics.",
+    },
 }
 APP_TABLE_START = "<!-- AUTO-UPDATE-APPS:START -->"
 APP_TABLE_END = "<!-- AUTO-UPDATE-APPS:END -->"
@@ -207,12 +210,13 @@ def get_latest_special_release(app, releases=None):
         return None
 
 
-def format_subtitle(author, date):
-    return f"{author}（{date}）" if date else author
+def format_subtitle(subtitle, date=None):
+    """Keep the upstream project's descriptive subtitle; never append author/date."""
+    return subtitle
 
 
-def format_app_subtitle(author, version_date):
-    return format_subtitle(author, version_date)
+def format_app_subtitle(subtitle, version_date=None):
+    return format_subtitle(subtitle)
 
 
 def build_from_github(app):
@@ -250,7 +254,7 @@ def build_from_sideloadlabs(apps):
         "name": SIDELOADLABS_DISPLAY_NAME,
         "bundleIdentifier": match["bundleIdentifier"],
         "developerName": match.get("developerName", "SideloadLabs"),
-        "subtitle": format_app_subtitle("SideloadLabs", match.get("versionDate", "")),
+        "subtitle": match.get("subtitle") or "This tweak makes Spotify think you have a Premium subscription, granting free listening, just like Spotilife, and provides some additional features like custom lyrics.",
         "localizedDescription": match.get("localizedDescription", ""),
         "iconURL": match.get("iconURL"),
         "tintColor": "669878",
@@ -271,7 +275,7 @@ def build_from_apptesters(app):
     name = app.get("name"); style = APP_STYLE.get(name, {"color": None, "subtitle": "AppTesters"})
     url, size = app.get("downloadURL"), app.get("size", 0)
     if not app.get("bundleIdentifier") or not url or not validate_download_url(url, size): return None
-    return {"name": name, "bundleIdentifier": app["bundleIdentifier"], "developerName": "AppTesters", "subtitle": format_app_subtitle(style["subtitle"], app.get("versionDate", "")), "localizedDescription": app.get("localizedDescription", ""), "iconURL": app.get("iconURL") or app.get("icon"), "tintColor": style["color"], "category": "social" if name in {"Facebook", "Threads", "Instagram"} else "entertainment", "screenshots": [], "versions": [{"version": app.get("version", ""), "date": app.get("versionDate", ""), "localizedDescription": app.get("localizedDescription", ""), "downloadURL": url, "size": size}]}
+    return {"name": name, "bundleIdentifier": app["bundleIdentifier"], "developerName": "AppTesters", "subtitle": app.get("subtitle") or style["subtitle"], "localizedDescription": app.get("localizedDescription", ""), "iconURL": app.get("iconURL") or app.get("icon"), "tintColor": style["color"], "category": "social" if name in {"Facebook", "Threads", "Instagram"} else "entertainment", "screenshots": [], "versions": [{"version": app.get("version", ""), "date": app.get("versionDate", ""), "localizedDescription": app.get("localizedDescription", ""), "downloadURL": url, "size": size}]}
 
 
 def build_from_ipavault(apps, target_name):
@@ -291,7 +295,7 @@ def build_from_ipavault(apps, target_name):
         "name": target_name,
         "bundleIdentifier": config["bundleIdentifier"],
         "developerName": "IPA Vault",
-        "subtitle": format_app_subtitle("IPA Vault", version_date),
+        "subtitle": match.get("subtitle") or match.get("localizedDescription") or style["subtitle"],
         "localizedDescription": match.get("localizedDescription", ""),
         "iconURL": match.get("iconURL"),
         "tintColor": style["color"],
