@@ -399,3 +399,45 @@ def test_full_update_routes_facebook_and_threads_to_ipavault(monkeypatch):
     assert by_name["Threads"]["developerName"] == "IPA Vault"
     assert by_name["Instagram"]["developerName"] == "AppTesters"
 
+
+
+
+def test_update_readme_refreshes_generated_app_table(tmp_path, monkeypatch):
+    readme_path = tmp_path / "README.md"
+    readme_path.write_text(
+        "# Chi Source\n\n"
+        "<!-- AUTO-UPDATE-APPS:START -->\nold table\n<!-- AUTO-UPDATE-APPS:END -->\n",
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(updater, "README_FILENAME", str(readme_path))
+    apps = [
+        {
+            "name": "Facebook",
+            "versions": [{"version": "582.0.0", "date": "2026-10-09"}],
+        },
+        {
+            "name": "Threads",
+            "versions": [{"version": "451.0", "date": "2026-10-13"}],
+        },
+    ]
+
+    updater.update_readme(
+        apps,
+        "2026-10-14 19:00:00",
+        "2026-10-14 19:00:00",
+        {"Facebook": "🟢 Updated", "Threads": "🟢 Updated"},
+        {},
+    )
+
+    content = readme_path.read_text(encoding="utf-8")
+    assert "old table" not in content
+    assert "[Facebook](https://github.com/927tx/IPA-Vault)" in content
+    assert "[Threads](https://github.com/927tx/IPA-Vault)" in content
+    assert "| IPA Vault |" in content
+    assert "| Facebook | 🟢 Updated | 582.0.0 | 2026-10-09 |" in content
+    assert "<!-- AUTO-UPDATE-STATUS:START -->" in content
+
+
+def test_facebook_and_threads_source_subtitles_match_provider():
+    assert updater.APP_STYLE["Facebook"]["subtitle"] == "IPA Vault"
+    assert updater.APP_STYLE["Threads"]["subtitle"] == "IPA Vault"

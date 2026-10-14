@@ -96,11 +96,13 @@ TARGET_APPS = ["Facebook", "Threads", "Instagram"]
 SIDELOADLABS_APP = "EeveeSpotifyReincarnated(PATCHED)"
 SIDELOADLABS_DISPLAY_NAME = "EeveeSpotify Reincarnated"
 APP_STYLE = {
-    "Facebook": {"color": "78A5E3", "subtitle": "AppTesters"},
-    "Threads": {"color": "858585", "subtitle": "AppTesters"},
+    "Facebook": {"color": "78A5E3", "subtitle": "IPA Vault"},
+    "Threads": {"color": "858585", "subtitle": "IPA Vault"},
     "Instagram": {"color": "DC8FA1", "subtitle": "AppTesters"},
     "EeveeSpotify Reincarnated": {"color": "669878", "subtitle": "SideloadLabs"},
 }
+APP_TABLE_START = "<!-- AUTO-UPDATE-APPS:START -->"
+APP_TABLE_END = "<!-- AUTO-UPDATE-APPS:END -->"
 STATUS_START = "<!-- AUTO-UPDATE-STATUS:START -->"
 STATUS_END = "<!-- AUTO-UPDATE-STATUS:END -->"
 STATUS_TIMES_START = "<!-- AUTO-UPDATE-STATUS-TIMES:START -->"
@@ -370,12 +372,17 @@ def update_readme(apps, checked_at, content_updated_at, statuses, status_times):
     for app in apps:
         latest = (app.get("versions") or [{}])[0]
         status_rows.append(f"| {app.get('name', 'Unknown')} | {statuses.get(app.get('name'), '⚪ Unchanged')} | {latest.get('version', 'N/A')} | {latest.get('date', 'N/A')} |")
+    app_table = "\n".join([APP_TABLE_START, "## Apps", "", *rows, "", APP_TABLE_END])
     status = "\n".join([STATUS_START, "## 更新狀態", f"- **最近自動檢查：** {checked_at}（台灣時間）", f"- **最近內容更新：** {content_updated_at}（台灣時間）", "", *status_rows, "", STATUS_END])
     status_times_block = "\n".join([
         STATUS_TIMES_START,
         f"<!-- {json.dumps(status_times, ensure_ascii=False, sort_keys=True)} -->",
         STATUS_TIMES_END,
     ])
+    if APP_TABLE_START in readme and APP_TABLE_END in readme:
+        readme = re.sub(re.escape(APP_TABLE_START) + r".*?" + re.escape(APP_TABLE_END), app_table, readme, flags=re.DOTALL)
+    else:
+        readme = readme.rstrip() + "\n\n" + app_table + "\n"
     if STATUS_START in readme and STATUS_END in readme:
         readme = re.sub(re.escape(STATUS_START) + r".*?" + re.escape(STATUS_END), status, readme, flags=re.DOTALL)
     else:
