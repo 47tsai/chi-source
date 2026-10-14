@@ -13,9 +13,9 @@ from urllib3.util.retry import Retry
 FILENAME = "apps.json"
 README_FILENAME = "README.md"
 YOUR_GITHUB_ID = "tsai97216"
-DISPLAY_NAME = "Chi Sources"
+DISPLAY_NAME = "Chi Source"
 SOURCE_URL = "https://altstore.chi.qzz.io"
-SOURCE_ICON_URL = f"https://raw.githubusercontent.com/{YOUR_GITHUB_ID}/AltStore-Sources/main/source_icon.png"
+SOURCE_ICON_URL = f"https://raw.githubusercontent.com/{YOUR_GITHUB_ID}/chi-source/main/source_icon.png"
 SOURCE_DESCRIPTION = "iOS IPA Source"
 
 
@@ -24,7 +24,7 @@ def create_session():
     adapter = HTTPAdapter(max_retries=retry)
     session = requests.Session()
     session.mount("https://", adapter)
-    session.headers.update({"User-Agent": "Chi-Sources-Updater/1.0", "Accept": "application/json"})
+    session.headers.update({"User-Agent": "Chi-Source-Updater/1.0", "Accept": "application/json"})
     return session
 
 SESSION = create_session()
@@ -359,7 +359,7 @@ def format_app_update_time(app, status_times, checked_at):
 
 
 def update_readme(apps, checked_at, content_updated_at, statuses, status_times):
-    path = Path(README_FILENAME); readme = path.read_text(encoding="utf-8") if path.exists() else "# Chi Sources\n"
+    path = Path(README_FILENAME); readme = path.read_text(encoding="utf-8") if path.exists() else "# Chi Source\n"
     rows = ["| App | 原倉庫 | 上次更新 |", "| --- | --- | --- |"]
     for app in apps:
         name = app.get("name", "Unknown")
@@ -388,7 +388,7 @@ def update_readme(apps, checked_at, content_updated_at, statuses, status_times):
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Update Chi Sources")
+    parser = argparse.ArgumentParser(description="Update Chi Source")
     parser.add_argument("--app", help="Only update the specified app. Omit to update all apps.")
     return parser.parse_args()
 
