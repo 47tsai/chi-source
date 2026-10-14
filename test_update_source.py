@@ -462,3 +462,16 @@ def test_update_readme_refreshes_generated_app_table(tmp_path, monkeypatch):
 def test_facebook_and_threads_source_subtitles_match_provider():
     assert updater.APP_STYLE["Facebook"]["subtitle"] == "Facebook with iQFace"
     assert updater.APP_STYLE["Threads"]["subtitle"] == "Threads with ThreadSaver"
+
+def test_source_app_order_groups_entertainment_before_social():
+    assert updater.APP_ORDER == [
+        "PiliPlus",
+        "YTKACE",
+        "YouTube Music",
+        "EeveeSpotify Reincarnated",
+        "Facebook",
+        "Threads",
+        "Instagram",
+    ]
+    apps = [{"name": name} for name in reversed(updater.APP_ORDER)]
+    assert [app["name"] for app in updater.sort_apps_by_order(apps)] == updater.APP_ORDER
