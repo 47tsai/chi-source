@@ -14,7 +14,7 @@
 | **YouTube Music** | Moe YouTube Music 9.41.2（10/13）；IPA Vault YTMUltimate+ 9.41.2（10/11）；自有 MaxMusic 9.34.4（8/30） | Moe 與 IPA Vault 本體版本相同且較新；MaxMusic 舊一版 | **你選定：IPA Vault YTMUltimate+ 9.41.2** |
 | **Instagram** | Moe 多個修改版 451.0.0（10/13）；IPA Vault Regram、RyukGram、Sparkle 451.0.0（10/13）；自有 Instagram 433.0.0（6/10） | 外部版本明顯較新，但修改套件各不相同 | **你選定：IPA Vault Instagram (RyukGram) 451.0.0** |
 | **Spotify** | IPA Vault Vitrine 9.1.90（10/13）；EeveeSpotify 9.1.90（10/08）；自有 EeveeSpotify Reincarnated 9.1.88（10/05） | Vitrine 本體較新版本與更新日期領先；Eevee 分支則更接近你現有版本 | **Spotify (Vitrine) 9.1.90**，依版本與更新時間優先；若重視 EeveeSpotify 相容性，則留 IPA Vault EeveeSpotify 9.1.90 |
-| **Facebook** | IPA Vault iQFace 582.0.0（10/09）；自有 Facebook 582.0.0（10/09）；另有 Facebook Plus 同版 | iQFace 版本、日期一致，屬重複項；Facebook Plus 是另一套修改 | **自有 Facebook（iQFace）**，與外部同版同日，無須重複收錄 |
+| **Facebook** | IPA Vault iQFace 582.0.0（10/09）；自有 Facebook 582.0.0（10/09）；另有 Facebook Plus 同版 | iQFace 版本、日期一致，屬重複項；Facebook Plus 是另一套修改 | **你選定：自有 Facebook（iQFace）582.0.0** |
 | **Threads** | IPA Vault ThreadSaver 451.0（10/13）；自有 Threads 451.0（10/13） | 版本與修改功能相同 | **自有 Threads（ThreadSaver）**，無須重複收錄 |
 | **Reddit** | MoeReddit 2026.41.0（10/13）；IPA Vault RedditFilter 2026.41.0（10/13） | Reddit 本體版本與日期相同，修改功能相近但不完全相同 | **先保留 MoeReddit** 作為單一代表；若你偏好 RedditFilter 的過濾功能再換 |
 | **Twitch** | Moe TwitchControl／Tweach 31.5（10/08）；IPA Vault Twitch 31.4（9/29） | Moe 版本較新，更新日期也較晚 | **Moe Twitch 31.5** |
