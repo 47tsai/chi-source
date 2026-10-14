@@ -10,21 +10,11 @@
 
 | App 類別 | 候選版本與來源 | 比較結果 | 建議保留 |
 |---|---|---|---|
-| **YouTube** | Moe YTK 21.41.5（10/13）；IPA Vault YouMod、YTKACE、YTPlus 21.41.5（10/11）；自有 YTKACE 21.41.5（10/11） | 本體版本相同，主要差在注入的 tweak 與修改套件 | **你選定：自有 YTKACE 21.41.5** |
-| **YouTube Music** | Moe YouTube Music 9.41.2（10/13）；IPA Vault YTMUltimate+ 9.41.2（10/11）；自有 MaxMusic 9.34.4（8/30） | Moe 與 IPA Vault 本體版本相同且較新；MaxMusic 舊一版 | **你選定：IPA Vault YTMUltimate+ 9.41.2** |
-| **Instagram** | Moe 多個修改版 451.0.0（10/13）；IPA Vault Regram、RyukGram、Sparkle 451.0.0（10/13）；自有 Instagram 433.0.0（6/10） | 外部版本明顯較新，但修改套件各不相同 | **你選定：IPA Vault Instagram (RyukGram) 451.0.0** |
 | **Spotify** | IPA Vault Vitrine 9.1.90（10/13）；EeveeSpotify 9.1.90（10/08）；自有 EeveeSpotify Reincarnated 9.1.88（10/05） | Vitrine 本體較新版本與更新日期領先；Eevee 分支則更接近你現有版本 | **Spotify (Vitrine) 9.1.90**，依版本與更新時間優先；若重視 EeveeSpotify 相容性，則留 IPA Vault EeveeSpotify 9.1.90 |
-| **Facebook** | IPA Vault iQFace 582.0.0（10/09）；自有 Facebook 582.0.0（10/09）；另有 Facebook Plus 同版 | iQFace 版本、日期一致，屬重複項；Facebook Plus 是另一套修改 | **你選定：自有 Facebook（iQFace）582.0.0** |
-| **Threads** | IPA Vault ThreadSaver 451.0（10/13）；自有 Threads 451.0（10/13） | 版本與修改功能相同 | **你選定：自有 Threads（ThreadSaver）451.0** |
 | **Reddit** | MoeReddit 2026.41.0（10/13）；IPA Vault RedditFilter 2026.41.0（10/13） | Reddit 本體版本與日期相同，修改功能相近但不完全相同 | **先保留 MoeReddit** 作為單一代表；若你偏好 RedditFilter 的過濾功能再換 |
 | **Twitch** | Moe TwitchControl／Tweach 31.5（10/08）；IPA Vault Twitch 31.4（9/29） | Moe 版本較新，更新日期也較晚 | **Moe Twitch 31.5** |
 | **Infuse** | IPA Vault Infuse Plus 8.5.7（10/13）；Moe Infuse Plus 8.5.6（9/30） | IPA Vault 本體版本較新，更新日期較晚 | **IPA Vault Infuse Plus 8.5.7** |
 | **Google Photos** | IPA Vault Gunshot 7.20.2、7.44.0、7.96.0（均標示 10/09） | 同一修改功能的不同本體版本，7.96.0 最新 | **Google Photos Gunshot 7.96.0**，除非需要舊版 iOS 相容性 |
-| **PiliPlus** | 自有 Chi Source 2.1.6.2（10/10）；AltGallery 2.1.6（build 5472，10/10） | 更新日期相同，版本標記不同，可能是不同打包方式 | **你選定：自有 Chi Source PiliPlus 2.1.6.2** |
-| **Animeko** | 自有 Chi Source Personal 6.3.0（10/13）；AltGallery 6.3.0（10/13） | 版本與更新日期相同 | **你選定：自有 Chi Source Personal Animeko 6.3.0** |
-| **Kazumi** | 自有 Chi Source Personal 2.3.8（10/07）；AltGallery 2.3.8（10/07） | 版本與更新日期相同 | **你選定：自有 Chi Source Personal Kazumi 2.3.8** |
-| **Aidoku** | 自有 Chi Source Personal 0.9（9/03）；AltGallery 0.9（9/03） | 版本與更新日期相同 | **你選定：自有 Chi Source Personal Aidoku 0.9** |
-| **AirCard-iOS** | 自有 Chi Source Personal 1.3.2（10/04）；AltGallery 1.3.2（10/04） | 版本與日期相同，但 AltGallery 標示 iOS 27 起、自有來源標示 iOS 18，最低版本資訊互相矛盾 | **你選定：自有 Chi Source Personal AirCard-iOS 1.3.2**；AltGallery 的最低系統需求待核實 |
 | **Husk** | AltGallery 2.0（10/11）；IPA Vault 1.1.0（10/09） | AltGallery 版本較新，日期也較晚 | **你選擇略過，暫不決定** |
 
 ### 共同項處理原則
