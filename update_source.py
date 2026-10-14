@@ -314,7 +314,7 @@ def find_previous_app(old_apps, bundle_id=None, name=None):
     return None
 
 
-def now_taiwan(): return datetime.now(ZoneInfo("Asia/Taipei")).strftime("%Y-%m-%d %H:%M:%S")
+def now_utc8(): return datetime.now(ZoneInfo("Asia/Taipei")).strftime("%Y-%m-%d %H:%M:%S")
 
 
 def get_previous_content_update(readme):
@@ -377,8 +377,8 @@ def update_readme(apps, checked_at, content_updated_at, statuses, status_times):
         APP_TABLE_START,
         "## Apps 更新狀態",
         "",
-        f"- **最近自動檢查：** {checked_at}（台灣時間）",
-        f"- **最近內容更新：** {content_updated_at}（台灣時間）",
+        f"- **最近自動檢查：** {checked_at}（UTC+8）",
+        f"- **最近內容更新：** {content_updated_at}（UTC+8）",
         "",
         *rows,
         "",
@@ -494,7 +494,7 @@ def main():
     old_source = json.loads(Path(FILENAME).read_text(encoding="utf-8")) if Path(FILENAME).exists() else {}
     old_apps = old_source.get("apps", []) if isinstance(old_source, dict) else []
     apps = update_source_apps(old_source, old_apps, args.app)
-    checked_at = now_taiwan()
+    checked_at = now_utc8()
     current_readme = Path(README_FILENAME).read_text(encoding="utf-8") if Path(README_FILENAME).exists() else ""
     previous_content_update = get_previous_content_update(current_readme) if current_readme else "尚未更新"
     previous_status_times = get_status_updated_at(current_readme)
