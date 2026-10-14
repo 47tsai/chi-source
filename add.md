@@ -10,9 +10,9 @@
 
 | App 類別 | 候選版本與來源 | 比較結果 | 建議保留 |
 |---|---|---|---|
-| **YouTube** | Moe YTK 21.41.5（10/13）；IPA Vault YouMod、YTKACE、YTPlus 21.41.5（10/11）；自有 YTKACE 21.41.5（10/11） | 本體版本相同，主要差在注入的 tweak 與修改套件 | **Moe YTK 21.41.5**，更新日期最新；若你更需要 YTKACE 的功能，則保留自有 YTKACE |
-| **YouTube Music** | Moe YouTube Music 9.41.2（10/13）；IPA Vault YTMUltimate+ 9.41.2（10/11）；自有 MaxMusic 9.34.4（8/30） | Moe 與 IPA Vault 本體版本相同且較新；MaxMusic 舊一版 | **Moe YouTube Music 9.41.2**，更新較晚；若要避免不同修改套件造成設定差異，再比較實際功能 |
-| **Instagram** | Moe 多個修改版 451.0.0（10/13）；IPA Vault Regram、RyukGram、Sparkle 451.0.0（10/13）；自有 Instagram 433.0.0（6/10） | 外部版本明顯較新，但修改套件各不相同 | **Moe Instagram (Moe RyukGram) 451.0.0**，日期最新且與 RyukGram 功能線對應；自有版本可列為舊版備援 |
+| **YouTube** | Moe YTK 21.41.5（10/13）；IPA Vault YouMod、YTKACE、YTPlus 21.41.5（10/11）；自有 YTKACE 21.41.5（10/11） | 本體版本相同，主要差在注入的 tweak 與修改套件 | **你選定：自有 YTKACE 21.41.5** |
+| **YouTube Music** | Moe YouTube Music 9.41.2（10/13）；IPA Vault YTMUltimate+ 9.41.2（10/11）；自有 MaxMusic 9.34.4（8/30） | Moe 與 IPA Vault 本體版本相同且較新；MaxMusic 舊一版 | **你選定：IPA Vault YTMUltimate+ 9.41.2** |
+| **Instagram** | Moe 多個修改版 451.0.0（10/13）；IPA Vault Regram、RyukGram、Sparkle 451.0.0（10/13）；自有 Instagram 433.0.0（6/10） | 外部版本明顯較新，但修改套件各不相同 | **你選定：IPA Vault Instagram (RyukGram) 451.0.0** |
 | **Spotify** | IPA Vault Vitrine 9.1.90（10/13）；EeveeSpotify 9.1.90（10/08）；自有 EeveeSpotify Reincarnated 9.1.88（10/05） | Vitrine 本體較新版本與更新日期領先；Eevee 分支則更接近你現有版本 | **Spotify (Vitrine) 9.1.90**，依版本與更新時間優先；若重視 EeveeSpotify 相容性，則留 IPA Vault EeveeSpotify 9.1.90 |
 | **Facebook** | IPA Vault iQFace 582.0.0（10/09）；自有 Facebook 582.0.0（10/09）；另有 Facebook Plus 同版 | iQFace 版本、日期一致，屬重複項；Facebook Plus 是另一套修改 | **自有 Facebook（iQFace）**，與外部同版同日，無須重複收錄 |
 | **Threads** | IPA Vault ThreadSaver 451.0（10/13）；自有 Threads 451.0（10/13） | 版本與修改功能相同 | **自有 Threads（ThreadSaver）**，無須重複收錄 |
