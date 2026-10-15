@@ -97,7 +97,6 @@
 | Iridium | 0.2.0 | 2026-10-04 | 在 iPhone 與 iPad 上執行 Windows 遊戲，並支援觸控、鍵盤、滑鼠與控制器。 |
 | iTorrent | 2.2.0-1 | 2026-07-19 | 支援背景下載與檔案 App 整合的 iOS BT 下載工具。 |
 | KMusic | 2.3.0 | 2026-03-12 | 整合多個音樂平台音源，支援同步歌詞、搜尋、背景播放與自訂音源。 |
-| Kumone | 0.3.20 | 2026-10-03 | 直接連接網易雲音樂官方 API 的原生客戶端，支援登入與歌曲播放。 |
 | Madeira | 0.1.3 | 2026-10-03 | 透過 FEX-Emu 與 Wine 在未越獄的 iOS 裝置上執行 x86-64 Windows 遊戲。 |
 | Mangayomi | 0.9.9 | 2026-10-12 | 跨平台漫畫、小說與動畫閱讀播放工具。 |
 | ManicEMU | 2.0.1 | 2026-09-18 | 整合多種家用主機、街機、電腦與 Java 手機平台的復古遊戲模擬器。 |
@@ -106,7 +105,6 @@
 | Musly | 2.0.2 | 2026-08-26 | Navidrome 與 Subsonic 音樂伺服器的播放器，提供自架音樂串流。 |
 | NeoStation iOS | 0.0.7 | 2026-10-13 | 整合多款主機模擬器與 RetroArch 的 iOS 遊戲模擬平台。 |
 | Novella | 2.5.0 | 2026-09-23 | 以 React Native 打造的 iOS 與 iPadOS 輕量電子書架第三方客戶端。 |
-| Opaline | 1.12.0 | 2026-09-10 | 輕量 YouTube 客戶端，支援 SponsorBlock、倒讚數顯示與最高 1080p 播放。 |
 | Orchard | 0.2 | 2026-09-25 | 透過 QEMU 在 iPhone 上啟動 macOS Ventura 虛擬機。 |
 | Playport | 0.4.0 | 2026-10-08 | 可在未越獄的 iPhone 上安裝並執行 Windows 遊戲，支援控制器操作。 |
 | PSX3IOS | 0.2.7-beta | 2026-09-01 | 以 RPCS3 為基礎的 PS3 模擬器，支援在 iPhone 與 iPad 上執行遊戲。 |
