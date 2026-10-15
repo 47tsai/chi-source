@@ -4,7 +4,11 @@ AltStore / SideStore Source。
 
 ## Source
 
-```
+[![Add Source with AltDirect](https://altdirect.app/assets/png/AltSource_Blue.png)](https://altdirect.app/?url=https://ipa.chi.qzz.io)
+
+**快速新增來源：** [使用 AltDirect 開啟](https://altdirect.app/?url=https://ipa.chi.qzz.io) · [複製來源網址](https://ipa.chi.qzz.io)
+
+```text
 https://ipa.chi.qzz.io
 ```
 
