@@ -100,19 +100,19 @@
       "name": "Facebook",
       "bundleIdentifier": "com.facebook.Facebook",
       "developerName": "IPA Vault",
-      "subtitle": "IPA Vault（2026-10-09）",
-      "localizedDescription": "Facebook 582.0.0 with iQFace 1.2",
+      "subtitle": "IPA Vault（2026-10-15）",
+      "localizedDescription": "Facebook 583.0.0 with iQFace 1.2",
       "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Facebook-Icons/Facebook-AppStore-1024x1024.png",
       "tintColor": "78A5E3",
       "category": "social",
       "screenshots": [],
       "versions": [
         {
-          "version": "582.0.0",
-          "date": "2026-10-09",
-          "localizedDescription": "IPA Vault build for Facebook (iQFace), version 582.0.0",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Facebook-582.0.0-iQFace.ipa",
-          "size": 234797502
+          "version": "583.0.0",
+          "date": "2026-10-15",
+          "localizedDescription": "IPA Vault build for Facebook (iQFace), version 583.0.0",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Facebook-583.0.0-iQFace.ipa",
+          "size": 236422345
         }
       ]
     },
