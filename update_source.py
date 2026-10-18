@@ -15,7 +15,7 @@ README_FILENAME = "README.md"
 YOUR_GITHUB_ID = "tsai97216"
 DISPLAY_NAME = "Chi Source"
 SOURCE_URL = "https://ipa.chi.qzz.io"
-SOURCE_ICON_URL = f"https://raw.githubusercontent.com/{YOUR_GITHUB_ID}/chi-source/main/source_icon.png"
+SOURCE_ICON_URL = "https://raw.githubusercontent.com/tsai97216/chi-design-system/main/logo/blue-w.png"
 SOURCE_DESCRIPTION = "iOS IPA Source"
 
 
