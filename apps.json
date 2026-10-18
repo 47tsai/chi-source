@@ -5,7 +5,7 @@
   "subtitle": "Chi's IPA Source",
   "description": "iOS IPA Source",
   "website": "https://ipa.chi.qzz.io",
-  "iconURL": "https://raw.githubusercontent.com/tsai97216/chi-source/main/source_icon.png",
+  "iconURL": "https://raw.githubusercontent.com/tsai97216/chi-design-system/main/logo/blue-w.png",
   "featuredApps": [
     "com.bgg.piliplus",
     "com.google.ios.youtube",
