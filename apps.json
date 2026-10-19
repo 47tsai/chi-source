@@ -60,19 +60,19 @@
       "name": "YouTube Music",
       "bundleIdentifier": "com.google.ios.youtubemusic.ytmultimateplus",
       "developerName": "IPA Vault",
-      "subtitle": "IPA Vault（2026-10-11）",
-      "localizedDescription": "YouTube Music 9.41.2 with YTMUltimate+ 2.4.1\n\nAdded Tweaks:\nYTMABConfig, YouMusicPIP, VolumeBoostYT, ReturnYouTubeMusicDislike",
+      "subtitle": "IPA Vault（2026-10-18）",
+      "localizedDescription": "YouTube Music 9.42.2 with YTMUltimate+ 2.4.1\n\nAdded Tweaks:\nYTMABConfig, YouMusicPIP, VolumeBoostYT, ReturnYouTubeMusicDislike",
       "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/YouTube-Music-Icons/YouTube-Music-AppStore-1024x1024.png",
       "tintColor": "E8A8B7",
       "category": "entertainment",
       "screenshots": [],
       "versions": [
         {
-          "version": "9.41.2",
-          "date": "2026-10-11",
-          "localizedDescription": "IPA Vault build for YTMUltimate+, version 9.41.2",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/YTMUltimatePlus-9.41.2.ipa",
-          "size": 111187370
+          "version": "9.42.2",
+          "date": "2026-10-18",
+          "localizedDescription": "IPA Vault build for YTMUltimate+, version 9.42.2",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/YTMUltimate%2B%209.42.2%20%5B%40ipavault%5D.ipa",
+          "size": 108476393
         }
       ]
     },
@@ -100,19 +100,19 @@
       "name": "Facebook",
       "bundleIdentifier": "com.facebook.Facebook",
       "developerName": "IPA Vault",
-      "subtitle": "IPA Vault（2026-10-15）",
-      "localizedDescription": "Facebook 583.0.0 with iQFace 1.2",
+      "subtitle": "IPA Vault（2026-10-18）",
+      "localizedDescription": "Facebook 584.0.0 with iQFace 1.2",
       "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Facebook-Icons/Facebook-AppStore-1024x1024.png",
       "tintColor": "78A5E3",
       "category": "social",
       "screenshots": [],
       "versions": [
         {
-          "version": "583.0.0",
-          "date": "2026-10-15",
-          "localizedDescription": "IPA Vault build for Facebook (iQFace), version 583.0.0",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Facebook-583.0.0-iQFace.ipa",
-          "size": 236422345
+          "version": "584.0.0",
+          "date": "2026-10-18",
+          "localizedDescription": "IPA Vault build for Facebook (iQFace), version 584.0.0",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Facebook%20584.0.0%20%28iQFace%29%20%5B%40ipavault%5D.ipa",
+          "size": 239358167
         }
       ]
     },
