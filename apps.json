@@ -120,19 +120,19 @@
       "name": "Threads",
       "bundleIdentifier": "com.burbn.barcelona",
       "developerName": "IPA Vault",
-      "subtitle": "IPA Vault（2026-10-19）",
-      "localizedDescription": "Threads 452.0 with ThreadSaver",
+      "subtitle": "IPA Vault（2026-10-20）",
+      "localizedDescription": "Threads 452.1 with ThreadSaver",
       "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Threads-Icons/Threads-AppStore-1024x1024.png",
       "tintColor": "858585",
       "category": "social",
       "screenshots": [],
       "versions": [
         {
-          "version": "452.0",
-          "date": "2026-10-19",
-          "localizedDescription": "IPA Vault build for Threads (ThreadSaver), version 452.0",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Threads-452.0-ThreadSaver.ipa",
-          "size": 111173156
+          "version": "452.1",
+          "date": "2026-10-20",
+          "localizedDescription": "IPA Vault build for Threads (ThreadSaver), version 452.1",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Threads-452.1-ThreadSaver.ipa",
+          "size": 113844763
         }
       ]
     },
