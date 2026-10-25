@@ -60,19 +60,19 @@
       "name": "YouTube Music",
       "bundleIdentifier": "com.google.ios.youtubemusic.ytmultimateplus",
       "developerName": "IPA Vault",
-      "subtitle": "IPA Vault（2026-10-18）",
-      "localizedDescription": "YouTube Music 9.42.2 with YTMUltimate+ 2.4.1\n\nAdded Tweaks:\nYTMABConfig, YouMusicPIP, VolumeBoostYT, ReturnYouTubeMusicDislike",
+      "subtitle": "IPA Vault（2026-10-25）",
+      "localizedDescription": "YouTube Music 9.43.2 with YTMUltimate+ 2.4.1\n\nAdded Tweaks:\nYTMABConfig, YouMusicPIP, VolumeBoostYT, ReturnYouTubeMusicDislike",
       "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/YouTube-Music-Icons/YouTube-Music-AppStore-1024x1024.png",
       "tintColor": "E8A8B7",
       "category": "entertainment",
       "screenshots": [],
       "versions": [
         {
-          "version": "9.42.2",
-          "date": "2026-10-18",
-          "localizedDescription": "IPA Vault build for YTMUltimate+, version 9.42.2",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/YTMUltimatePlus-9.42.2.ipa",
-          "size": 108476393
+          "version": "9.43.2",
+          "date": "2026-10-25",
+          "localizedDescription": "IPA Vault build for YTMUltimate+, version 9.43.2",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/YTMUltimatePlus-9.43.2.ipa",
+          "size": 111956751
         }
       ]
     },
