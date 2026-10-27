@@ -14,8 +14,8 @@ https://ipa.chi.qzz.io
 <!-- AUTO-UPDATE-APPS:START -->
 ## Apps 更新狀態
 
-- **最近自動檢查：** 2026-10-27 08:00:51（UTC+8）
-- **最近內容更新：** 2026-10-26 04:00:49（UTC+8）
+- **最近自動檢查：** 2026-10-27 09:00:54（UTC+8）
+- **最近內容更新：** 2026-10-27 09:00:54（UTC+8）
 
 | App | 原倉庫 | 狀態 | 最新版本 | 版本日期 | 上次更新 |
 | --- | --- | --- | --- | --- | --- |
@@ -24,11 +24,11 @@ https://ipa.chi.qzz.io
 | **[YouTube Music](https://github.com/927tx/IPA-Vault)** | IPA Vault | Unchanged | 9.43.2 | 2026-10-25 | 2026-10-25 |
 | **[EeveeSpotify Reincarnated](https://github.com/SideloadLabs/SideloasLabs-AltSource)** | SideloadLabs | Unchanged | 9.1.88 | 2026-10-05 | 2026-10-05 |
 | **[Facebook](https://github.com/927tx/IPA-Vault)** | IPA Vault | Unchanged | 584.1.0 | 2026-10-23 | 2026-10-23 |
-| **[Threads](https://github.com/927tx/IPA-Vault)** | IPA Vault | Unchanged | 452.1 | 2026-10-20 | 2026-10-20 |
-| **[Instagram](https://github.com/927tx/IPA-Vault)** | IPA Vault | Unchanged | 452.0.0 | 2026-10-23 | 2026-10-23 |
+| **[Threads](https://github.com/927tx/IPA-Vault)** | IPA Vault | **Updated** | 453.0 | 2026-10-26 | **2026-10-27** |
+| **[Instagram](https://github.com/927tx/IPA-Vault)** | IPA Vault | **Updated** | 453.0.0 | 2026-10-26 | **2026-10-27** |
 
 <!-- AUTO-UPDATE-APPS:END -->
 
 <!-- AUTO-UPDATE-STATUS-TIMES:START -->
-<!-- {} -->
+<!-- {"Instagram": "2026-10-27 09:00:54", "Threads": "2026-10-27 09:00:54"} -->
 <!-- AUTO-UPDATE-STATUS-TIMES:END -->
