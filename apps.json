@@ -140,8 +140,8 @@
       "name": "Instagram",
       "bundleIdentifier": "com.burbn.instagram",
       "developerName": "IPA Vault",
-      "subtitle": "IPA Vault（2026-10-26）",
-      "localizedDescription": "Instagram 453.0.0 with RyukGram 1.5.0",
+      "subtitle": "IPA Vault（2026-10-29）",
+      "localizedDescription": "Instagram 453.0.0 with RyukGram 1.5.1",
       "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Instagram-Icons/Instagram-AppStore-1024x1024.png",
       "tintColor": "DC8FA1",
       "category": "social",
@@ -149,10 +149,10 @@
       "versions": [
         {
           "version": "453.0.0",
-          "date": "2026-10-26",
+          "date": "2026-10-29",
           "localizedDescription": "IPA Vault build for Instagram (RyukGram), version 453.0.0",
           "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Instagram-453.0.0-RyukGram.ipa",
-          "size": 359508400
+          "size": 359614397
         }
       ]
     }

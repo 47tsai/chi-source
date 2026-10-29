@@ -14,8 +14,8 @@ https://ipa.chi.qzz.io
 <!-- AUTO-UPDATE-APPS:START -->
 ## Apps 更新狀態
 
-- **最近自動檢查：** 2026-10-30 06:00:57（UTC+8）
-- **最近內容更新：** 2026-10-29 17:00:58（UTC+8）
+- **最近自動檢查：** 2026-10-30 07:00:56（UTC+8）
+- **最近內容更新：** 2026-10-30 07:00:56（UTC+8）
 
 | App | 原倉庫 | 狀態 | 最新版本 | 版本日期 | 上次更新 |
 | --- | --- | --- | --- | --- | --- |
@@ -25,7 +25,7 @@ https://ipa.chi.qzz.io
 | **[EeveeSpotify Reincarnated](https://github.com/SideloadLabs/SideloasLabs-AltSource)** | SideloadLabs | Unchanged | 9.1.88 | 2026-10-05 | 2026-10-05 |
 | **[Facebook](https://github.com/927tx/IPA-Vault)** | IPA Vault | **Updated** | 585.0.0 | 2026-10-29 | **2026-10-29** |
 | **[Threads](https://github.com/927tx/IPA-Vault)** | IPA Vault | Unchanged | 453.0 | 2026-10-26 | 2026-10-26 |
-| **[Instagram](https://github.com/927tx/IPA-Vault)** | IPA Vault | Unchanged | 453.0.0 | 2026-10-26 | 2026-10-26 |
+| **[Instagram](https://github.com/927tx/IPA-Vault)** | IPA Vault | Unchanged | 453.0.0 | 2026-10-29 | 2026-10-29 |
 
 <!-- AUTO-UPDATE-APPS:END -->
 
