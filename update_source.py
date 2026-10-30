@@ -12,10 +12,10 @@ from urllib3.util.retry import Retry
 
 FILENAME = "apps.json"
 README_FILENAME = "README.md"
-YOUR_GITHUB_ID = "tsai97216"
+YOUR_GITHUB_ID = "47tsai"
 DISPLAY_NAME = "Chi Source"
 SOURCE_URL = "https://ipa.chi.qzz.io"
-SOURCE_ICON_URL = "https://raw.githubusercontent.com/tsai97216/chi-design-system/main/logo/black-w.png"
+SOURCE_ICON_URL = "https://raw.githubusercontent.com/47tsai/chi-design-system/main/logo/black-w.png"
 SOURCE_DESCRIPTION = "iOS IPA Source"
 
 
