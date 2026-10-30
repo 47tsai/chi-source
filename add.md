@@ -120,5 +120,5 @@
 - [Moe AltStore](https://raw.githubusercontent.com/MountainofPenguin/moe-altstore/main/apps.json)
 - [IPA Vault](https://raw.githubusercontent.com/927tx/IPA-Vault/main/ipavaultsource.json)
 - [AltGallery](https://raw.githubusercontent.com/bebound/AltGallery/master/all-apps.json)
-- [Chi Source](https://raw.githubusercontent.com/tsai97216/chi-source/main/apps.json)
-- [Chi Source Personal](https://raw.githubusercontent.com/tsai97216/chi-source-personal/main/apps.json)
+- [Chi Source](https://raw.githubusercontent.com/47tsai/chi-source/main/apps.json)
+- [Chi Source Personal](https://raw.githubusercontent.com/47tsai/chi-source-personal/main/apps.json)
