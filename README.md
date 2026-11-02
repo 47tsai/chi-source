@@ -14,12 +14,12 @@ https://ipa.chi.qzz.io
 <!-- AUTO-UPDATE-APPS:START -->
 ## Apps 更新狀態
 
-- **最近自動檢查：** 2026-11-02 15:01:35（UTC+8）
+- **最近自動檢查：** 2026-11-02 16:01:29（UTC+8）
 - **最近內容更新：** 2026-11-01 16:01:28（UTC+8）
 
 | App | 原倉庫 | 狀態 | 最新版本 | 版本日期 | 上次更新 |
 | --- | --- | --- | --- | --- | --- |
-| **[PiliPlus](https://github.com/bggRGjQaUbCoE/PiliPlus)** | bggRGjQaUbCoE | **Updated** | 2.2.0 | 2026-11-01 | **2026-11-01** |
+| **[PiliPlus](https://github.com/bggRGjQaUbCoE/PiliPlus)** | bggRGjQaUbCoE | Unchanged | 2.2.0 | 2026-11-01 | 2026-11-01 |
 | **[YTKACE](https://github.com/itzzace/ytkace)** | itzzace | Unchanged | 21.42.4 | 2026-10-25 | 2026-10-25 |
 | **[YouTube Music](https://github.com/927tx/IPA-Vault)** | IPA Vault | Unchanged | 9.43.2 | 2026-10-25 | 2026-10-25 |
 | **[EeveeSpotify Reincarnated](https://github.com/SideloadLabs/SideloasLabs-AltSource)** | SideloadLabs | Unchanged | 9.1.88 | 2026-10-05 | 2026-10-05 |
@@ -30,5 +30,5 @@ https://ipa.chi.qzz.io
 <!-- AUTO-UPDATE-APPS:END -->
 
 <!-- AUTO-UPDATE-STATUS-TIMES:START -->
-<!-- {"PiliPlus": "2026-11-01 16:01:28"} -->
+<!-- {} -->
 <!-- AUTO-UPDATE-STATUS-TIMES:END -->
