@@ -92,11 +92,11 @@ IPA_VAULT_APPS = {
     "Instagram": {"name": "Instagram (RyukGram)", "bundleIdentifier": "com.burbn.instagram"},
     "YouTube Music": {"name": "YTMUltimate+", "bundleIdentifier": "com.google.ios.youtubemusic.ytmultimateplus"},
 }
-SIDeloadLABS_SOURCE_URL = "https://raw.githubusercontent.com/SideloadLabs/SideloasLabs-AltSource/main/apps.json"
-SIDELOADLABS_REPO_URL = "https://github.com/SideloadLabs/SideloasLabs-AltSource"
+EEVEEIPA_REPO = "estrogencat/EeveeIPA"
+EEVEEIPA_REPO_URL = "https://github.com/estrogencat/EeveeIPA"
+EEVEEIPA_DISPLAY_NAME = "EeveeSpotify Reincarnated"
+EEVEEIPA_BUNDLE_ID = "com.spotify.client"
 TARGET_APPS = ["Facebook", "Threads", "Instagram", "YouTube Music"]
-SIDELOADLABS_APP = "EeveeSpotifyReincarnated(PATCHED)"
-SIDELOADLABS_DISPLAY_NAME = "EeveeSpotify Reincarnated"
 APP_STYLE = {
     "Facebook": {"color": "78A5E3", "subtitle": "Facebook with iQFace"},
     "Threads": {"color": "858585", "subtitle": "Threads with ThreadSaver"},
@@ -104,7 +104,7 @@ APP_STYLE = {
     "YouTube Music": {"color": "E8A8B7", "subtitle": "YouTube Music with YTMUltimate+"},
     "EeveeSpotify Reincarnated": {
         "color": "669878",
-        "subtitle": "This tweak makes Spotify think you have a Premium subscription, granting free listening, just like Spotilife, and provides some additional features like custom lyrics.",
+        "subtitle": "EeveeSpotify for SideStore (Regular)",
     },
 }
 APP_TABLE_START = "<!-- AUTO-UPDATE-APPS:START -->"
@@ -247,30 +247,65 @@ def build_from_github(app):
         return None
 
 
-def build_from_sideloadlabs(apps):
-    if not isinstance(apps, list): return None
-    match = next((app for app in apps if isinstance(app, dict) and app.get("name") == SIDELOADLABS_APP), None)
-    if not isinstance(match, dict): return None
-    url, size = match.get("downloadURL"), match.get("size", 0)
-    if not match.get("bundleIdentifier") or not url or not validate_download_url(url, size): return None
-    return {
-        "name": SIDELOADLABS_DISPLAY_NAME,
-        "bundleIdentifier": match["bundleIdentifier"],
-        "developerName": match.get("developerName", "SideloadLabs"),
-        "subtitle": format_app_subtitle(match.get("developerName", "SideloadLabs"), match.get("versionDate", "")),
-        "localizedDescription": match.get("localizedDescription", ""),
-        "iconURL": match.get("iconURL"),
-        "tintColor": "669878",
-        "category": "entertainment",
-        "screenshots": [],
-        "versions": [{
-            "version": match.get("version", ""),
-            "date": match.get("versionDate", ""),
-            "localizedDescription": match.get("versionDescription") or match.get("localizedDescription", ""),
-            "downloadURL": url,
-            "size": size,
-        }],
-    }
+def build_from_eeveeipa():
+    """Select the newest regular SideStore IPA, never the patched/certificate build."""
+    try:
+        releases = GITHUB_PROVIDER.releases(EEVEEIPA_REPO, per_page=100)
+        candidates = []
+        for release in releases if isinstance(releases, list) else []:
+            if not isinstance(release, dict) or release.get("draft"):
+                continue
+            for asset in release.get("assets", []):
+                if not isinstance(asset, dict):
+                    continue
+                asset_name = str(asset.get("name", ""))
+                # Regular SideStore build ends exactly in -LG.ipa.
+                # This excludes -LG-patched.ipa and other patched variants.
+                if not re.search(r"-LG\\.ipa$", asset_name, re.IGNORECASE):
+                    continue
+                version_match = re.search(r"EeveeSpotify-(\\d+\\.\\d+\\.\\d+)-", asset_name, re.IGNORECASE)
+                if not version_match:
+                    continue
+                candidates.append((
+                    release.get("published_at") or release.get("created_at") or "",
+                    release,
+                    asset,
+                    version_match.group(1),
+                ))
+        if not candidates:
+            print("⚠️ EeveeSpotify: no regular -LG.ipa release asset found")
+            return None
+        candidates.sort(key=lambda item: item[0], reverse=True)
+        published, release, asset, spotify_version = candidates[0]
+        download_url, size = asset.get("browser_download_url"), asset.get("size", 0)
+        if not download_url or not validate_download_url(download_url, size):
+            return None
+        version_date = published[:10]
+        release_name = release.get("name") or release.get("tag_name") or ""
+        print(f"✅ EeveeSpotify selected: Spotify {spotify_version} -> {asset.get('name')}")
+        return {
+            "name": EEVEEIPA_DISPLAY_NAME,
+            "bundleIdentifier": EEVEEIPA_BUNDLE_ID,
+            "developerName": "estrogencat",
+            "subtitle": format_app_subtitle("estrogencat / EeveeIPA", version_date),
+            "localizedDescription": "Regular SideStore build. " + release_name,
+            "iconURL": "https://files.catbox.moe/9fgova.JPG",
+            "tintColor": "669878",
+            "category": "entertainment",
+            "screenshots": [],
+            "versions": [{
+                # AltStore version tracks Spotify, not the EeveeIPA release tag.
+                "version": spotify_version,
+                "date": version_date,
+                "localizedDescription": (release.get("body") or release_name)[:500],
+                "downloadURL": download_url,
+                "size": size,
+            }],
+        }
+    except (requests.RequestException, ValueError):
+        return None
+
+
 
 
 def build_from_apptesters(app):
@@ -353,7 +388,7 @@ def is_updated_within_day(updated_at, checked_at):
 def get_app_meta(name):
     for app in GITHUB_APPS:
         if app["name"] == name: return app["author"], app["repo_url"]
-    if name == SIDELOADLABS_DISPLAY_NAME: return "SideloadLabs", SIDELOADLABS_REPO_URL
+    if name == EEVEEIPA_DISPLAY_NAME: return "estrogencat", EEVEEIPA_REPO_URL
     if name in IPA_VAULT_APPS: return "IPA Vault", IPA_VAULT_REPO_URL
     return ("AppTesters", APPT_ESTERS_REPO_URL) if name in TARGET_APPS else ("Unknown", "")
 
@@ -447,9 +482,8 @@ def build_single_app(target_name, old_apps):
         built = build_from_apptesters(match) if match else None
         return built or find_previous_app({"apps": old_apps}, name=target_name)
 
-    if target_name == SIDELOADLABS_DISPLAY_NAME:
-        sideload_apps = JSON_PROVIDER.fetch(SIDeloadLABS_SOURCE_URL)
-        built = build_from_sideloadlabs(ensure_list(sideload_apps, "apps"))
+    if target_name == EEVEEIPA_DISPLAY_NAME:
+        built = build_from_eeveeipa()
         return built or find_previous_app({"apps": old_apps}, name=target_name)
 
     return None
@@ -497,13 +531,12 @@ def update_source_apps(old_source, old_apps, target_name=None):
                 if previous: apps.append(previous)
                 else: print(f"❌ {target}: update failed and no previous version available")
 
-        sideload_apps = JSON_PROVIDER.fetch(SIDeloadLABS_SOURCE_URL)
-        built = build_from_sideloadlabs(ensure_list(sideload_apps, "apps"))
+        built = build_from_eeveeipa()
         if built: apps.append(built)
         else:
-            previous = find_previous_app({"apps": old_apps}, name=SIDELOADLABS_DISPLAY_NAME)
+            previous = find_previous_app({"apps": old_apps}, name=EEVEEIPA_DISPLAY_NAME)
             if previous: apps.append(previous)
-            else: print(f"❌ {SIDELOADLABS_DISPLAY_NAME}: update failed and no previous version available")
+            else: print(f"❌ {EEVEEIPA_DISPLAY_NAME}: update failed and no previous version available")
         return sort_apps_by_order(keep_latest_only(apps))
 
     if target_name == "all":
