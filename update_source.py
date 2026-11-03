@@ -261,9 +261,9 @@ def build_from_eeveeipa():
                 asset_name = str(asset.get("name", ""))
                 # Regular SideStore build ends exactly in -LG.ipa.
                 # This excludes -LG-patched.ipa and other patched variants.
-                if not re.search(r"-LG\\.ipa$", asset_name, re.IGNORECASE):
+                if not re.search(r"-LG\.ipa$", asset_name, re.IGNORECASE):
                     continue
-                version_match = re.search(r"EeveeSpotify-(\\d+\\.\\d+\\.\\d+)-", asset_name, re.IGNORECASE)
+                version_match = re.search(r"EeveeSpotify-(\d+\.\d+\.\d+)-", asset_name, re.IGNORECASE)
                 if not version_match:
                     continue
                 candidates.append((
