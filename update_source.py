@@ -287,7 +287,7 @@ def build_from_eeveeipa():
             "name": EEVEEIPA_DISPLAY_NAME,
             "bundleIdentifier": EEVEEIPA_BUNDLE_ID,
             "developerName": "estrogencat",
-            "subtitle": format_app_subtitle("estrogencat / EeveeIPA", version_date),
+            "subtitle": format_app_subtitle("estrogencat", version_date),
             "localizedDescription": "Regular SideStore build. " + release_name,
             "iconURL": "https://files.catbox.moe/9fgova.JPG",
             "tintColor": "669878",
