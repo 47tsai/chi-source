@@ -14,13 +14,13 @@ https://ipa.chi.qzz.io
 <!-- AUTO-UPDATE-APPS:START -->
 ## Apps 更新狀態
 
-- **最近自動檢查：** 2026-11-04 06:01:33（UTC+8）
-- **最近內容更新：** 2026-11-04 05:01:39（UTC+8）
+- **最近自動檢查：** 2026-11-04 07:01:25（UTC+8）
+- **最近內容更新：** 2026-11-04 07:01:25（UTC+8）
 
 | App | 原倉庫 | 狀態 | 最新版本 | 版本日期 | 上次更新 |
 | --- | --- | --- | --- | --- | --- |
 | **[PiliPlus](https://github.com/bggRGjQaUbCoE/PiliPlus)** | bggRGjQaUbCoE | **Updated** | 2.2.0.2 | 2026-11-03 | **2026-11-03** |
-| **[YTKACE](https://github.com/itzzace/ytkace)** | itzzace | Unchanged | 21.42.4 | 2026-10-25 | 2026-10-25 |
+| **[YTKACE](https://github.com/itzzace/ytkace)** | itzzace | **Updated** | 21.44.4 | 2026-11-03 | **2026-11-04** |
 | **[YouTube Music](https://github.com/927tx/IPA-Vault)** | IPA Vault | Unchanged | 9.43.2 | 2026-10-25 | 2026-10-25 |
 | **[EeveeSpotify Reincarnated](https://github.com/SideloadLabs/SideloasLabs-AltSource)** | SideloadLabs | Unchanged | 9.1.88 | 2026-10-05 | 2026-10-05 |
 | **[Facebook](https://github.com/927tx/IPA-Vault)** | IPA Vault | Unchanged | 585.0.0 | 2026-10-29 | 2026-10-29 |
@@ -30,5 +30,5 @@ https://ipa.chi.qzz.io
 <!-- AUTO-UPDATE-APPS:END -->
 
 <!-- AUTO-UPDATE-STATUS-TIMES:START -->
-<!-- {"Instagram": "2026-11-04 05:01:39", "PiliPlus": "2026-11-03 16:01:34", "Threads": "2026-11-04 05:01:39"} -->
+<!-- {"Instagram": "2026-11-04 05:01:39", "PiliPlus": "2026-11-03 16:01:34", "Threads": "2026-11-04 05:01:39", "YTKACE": "2026-11-04 07:01:25"} -->
 <!-- AUTO-UPDATE-STATUS-TIMES:END -->
