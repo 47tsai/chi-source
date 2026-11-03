@@ -22,7 +22,7 @@ https://ipa.chi.qzz.io
 | **[PiliPlus](https://github.com/bggRGjQaUbCoE/PiliPlus)** | bggRGjQaUbCoE | **Updated** | 2.2.0.2 | 2026-11-03 | **2026-11-03** |
 | **[YTKACE](https://github.com/itzzace/ytkace)** | itzzace | **Updated** | 21.44.4 | 2026-11-03 | **2026-11-04** |
 | **[YouTube Music](https://github.com/927tx/IPA-Vault)** | IPA Vault | Unchanged | 9.43.2 | 2026-10-25 | 2026-10-25 |
-| **[EeveeSpotify Reincarnated](https://github.com/SideloadLabs/SideloasLabs-AltSource)** | SideloadLabs | Unchanged | 9.1.88 | 2026-10-05 | 2026-10-05 |
+| **[EeveeSpotify Reincarnated](https://github.com/estrogencat/EeveeIPA)** | estrogencat | **Updated** | 9.1.90 | 2026-11-02 | **2026-11-04** |
 | **[Facebook](https://github.com/927tx/IPA-Vault)** | IPA Vault | Unchanged | 585.0.0 | 2026-10-29 | 2026-10-29 |
 | **[Threads](https://github.com/927tx/IPA-Vault)** | IPA Vault | **Updated** | 454.0 | 2026-11-03 | **2026-11-04** |
 | **[Instagram](https://github.com/927tx/IPA-Vault)** | IPA Vault | **Updated** | 454.0.0 | 2026-11-03 | **2026-11-04** |
