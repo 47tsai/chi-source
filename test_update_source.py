@@ -202,7 +202,7 @@ def test_sideloadlabs_failure_falls_back_to_previous(monkeypatch):
             "versions": [{"version": "9.1.88"}],
         }
     ]
-    monkeypatch.setattr(updater.JSON_PROVIDER, "fetch", lambda url: None)
+    monkeypatch.setattr(updater, "build_from_eeveeipa", lambda: None)
     result = updater.update_source_apps({}, old_apps, "EeveeSpotify Reincarnated")
     assert result == old_apps
 
