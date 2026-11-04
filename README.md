@@ -14,12 +14,12 @@ https://ipa.chi.qzz.io
 <!-- AUTO-UPDATE-APPS:START -->
 ## Apps 更新狀態
 
-- **最近自動檢查：** 2026-11-04 16:01:25（UTC+8）
+- **最近自動檢查：** 2026-11-04 17:01:30（UTC+8）
 - **最近內容更新：** 2026-11-04 09:55:51（UTC+8）
 
 | App | 原倉庫 | 狀態 | 最新版本 | 版本日期 | 上次更新 |
 | --- | --- | --- | --- | --- | --- |
-| **[PiliPlus](https://github.com/bggRGjQaUbCoE/PiliPlus)** | bggRGjQaUbCoE | **Updated** | 2.2.0.2 | 2026-11-03 | **2026-11-03** |
+| **[PiliPlus](https://github.com/bggRGjQaUbCoE/PiliPlus)** | bggRGjQaUbCoE | Unchanged | 2.2.0.2 | 2026-11-03 | 2026-11-03 |
 | **[YTKACE](https://github.com/itzzace/ytkace)** | itzzace | **Updated** | 21.44.4 | 2026-11-03 | **2026-11-04** |
 | **[YouTube Music](https://github.com/927tx/IPA-Vault)** | IPA Vault | Unchanged | 9.43.2 | 2026-10-25 | 2026-10-25 |
 | **[EeveeSpotify Reincarnated](https://github.com/estrogencat/EeveeIPA)** | estrogencat | Unchanged | 9.1.90 | 2026-11-02 | 2026-11-02 |
@@ -30,5 +30,5 @@ https://ipa.chi.qzz.io
 <!-- AUTO-UPDATE-APPS:END -->
 
 <!-- AUTO-UPDATE-STATUS-TIMES:START -->
-<!-- {"Instagram": "2026-11-04 05:01:39", "PiliPlus": "2026-11-03 16:01:34", "Threads": "2026-11-04 05:01:39", "YTKACE": "2026-11-04 07:01:25"} -->
+<!-- {"Instagram": "2026-11-04 05:01:39", "Threads": "2026-11-04 05:01:39", "YTKACE": "2026-11-04 07:01:25"} -->
 <!-- AUTO-UPDATE-STATUS-TIMES:END -->
