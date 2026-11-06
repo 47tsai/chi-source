@@ -14,8 +14,8 @@ https://ipa.chi.qzz.io
 <!-- AUTO-UPDATE-APPS:START -->
 ## Apps 更新狀態
 
-- **最近自動檢查：** 2026-11-06 20:01:25（UTC+8）
-- **最近內容更新：** 2026-11-04 09:55:51（UTC+8）
+- **最近自動檢查：** 2026-11-06 21:01:22（UTC+8）
+- **最近內容更新：** 2026-11-06 21:01:22（UTC+8）
 
 | App | 原倉庫 | 狀態 | 最新版本 | 版本日期 | 上次更新 |
 | --- | --- | --- | --- | --- | --- |
@@ -23,12 +23,12 @@ https://ipa.chi.qzz.io
 | **[YTKACE](https://github.com/itzzace/ytkace)** | itzzace | Unchanged | 21.44.4 | 2026-11-03 | 2026-11-03 |
 | **[YouTube Music](https://github.com/927tx/IPA-Vault)** | IPA Vault | Unchanged | 9.43.2 | 2026-10-25 | 2026-10-25 |
 | **[EeveeSpotify Reincarnated](https://github.com/estrogencat/EeveeIPA)** | estrogencat | Unchanged | 9.1.90 | 2026-11-02 | 2026-11-02 |
-| **[Facebook](https://github.com/927tx/IPA-Vault)** | IPA Vault | Unchanged | 585.0.0 | 2026-10-29 | 2026-10-29 |
+| **[Facebook](https://github.com/927tx/IPA-Vault)** | IPA Vault | **Updated** | 586.0.0 | 2026-11-06 | **2026-11-06** |
 | **[Threads](https://github.com/927tx/IPA-Vault)** | IPA Vault | Unchanged | 454.0 | 2026-11-03 | 2026-11-03 |
-| **[Instagram](https://github.com/927tx/IPA-Vault)** | IPA Vault | Unchanged | 454.0.0 | 2026-11-03 | 2026-11-03 |
+| **[Instagram](https://github.com/927tx/IPA-Vault)** | IPA Vault | **Updated** | 454.1.0 | 2026-11-06 | **2026-11-06** |
 
 <!-- AUTO-UPDATE-APPS:END -->
 
 <!-- AUTO-UPDATE-STATUS-TIMES:START -->
-<!-- {} -->
+<!-- {"Facebook": "2026-11-06 21:01:22", "Instagram": "2026-11-06 21:01:22"} -->
 <!-- AUTO-UPDATE-STATUS-TIMES:END -->

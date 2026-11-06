@@ -100,19 +100,19 @@
       "name": "Facebook",
       "bundleIdentifier": "com.facebook.Facebook",
       "developerName": "IPA Vault",
-      "subtitle": "IPA Vault（2026-10-29）",
-      "localizedDescription": "Facebook 584.1.0 with iQFace 1.2",
+      "subtitle": "IPA Vault（2026-11-06）",
+      "localizedDescription": "Facebook 586.0.0 with iQFace 1.2",
       "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Facebook-Icons/Facebook-AppStore-1024x1024.png",
       "tintColor": "78A5E3",
       "category": "social",
       "screenshots": [],
       "versions": [
         {
-          "version": "585.0.0",
-          "date": "2026-10-29",
-          "localizedDescription": "IPA Vault build for Facebook (iQFace), version 584.1.0",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Facebook-585.0.0-iQFace.ipa",
-          "size": 244950580
+          "version": "586.0.0",
+          "date": "2026-11-06",
+          "localizedDescription": "IPA Vault build for Facebook (iQFace), version 586.0.0",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Facebook%20586.0.0%20%28iQFace%201.2%29%20%5B%40ipavault%5D.ipa",
+          "size": 250701701
         }
       ]
     },
@@ -140,19 +140,19 @@
       "name": "Instagram",
       "bundleIdentifier": "com.burbn.instagram",
       "developerName": "IPA Vault",
-      "subtitle": "IPA Vault（2026-11-03）",
-      "localizedDescription": "Instagram 454.0.0 with RyukGram 1.5.1",
+      "subtitle": "IPA Vault（2026-11-06）",
+      "localizedDescription": "Instagram 454.1.0 with RyukGram 1.5.1",
       "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Instagram-Icons/Instagram-AppStore-1024x1024.png",
       "tintColor": "DC8FA1",
       "category": "social",
       "screenshots": [],
       "versions": [
         {
-          "version": "454.0.0",
-          "date": "2026-11-03",
-          "localizedDescription": "IPA Vault build for Instagram (RyukGram), version 454.0.0",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/RyukGram%201.5.1%20%28IG%20454.0.0%29%20%5B%40ipavault%5D.ipa",
-          "size": 380812649
+          "version": "454.1.0",
+          "date": "2026-11-06",
+          "localizedDescription": "IPA Vault build for Instagram (RyukGram), version 454.1.0",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/RyukGram%201.5.1%20%28IG%20454.1.0%29%20%5B%40ipavault%5D.ipa",
+          "size": 380815593
         }
       ]
     }
