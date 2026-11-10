@@ -40,7 +40,7 @@
       "name": "YTKACE",
       "bundleIdentifier": "com.google.ios.youtube",
       "developerName": "itzzace",
-      "subtitle": "itzzace（2026-11-03）",
+      "subtitle": "itzzace（2026-11-10）",
       "localizedDescription": "An open-source YouTube enhancement for iOS.",
       "iconURL": "https://raw.githubusercontent.com/47tsai/chi-source/main/YT.png",
       "tintColor": "E8A8B7",
@@ -48,11 +48,11 @@
       "screenshots": [],
       "versions": [
         {
-          "version": "21.44.4",
-          "date": "2026-11-03",
-          "localizedDescription": "by @itzzace0\n\nWhat's new:\n• Updated to YouTube 21.44.4\n• Normal Home Layout now brings back the old Home with topic chips\n• Added Turn Off Haptics\n• Added Open Links Directly\n• Added Remove Autoplay Prompt\n• Added Remove More Videos\n• Added an option to remove Listen with YouTube Music from the ⋯ menu\n• Added a rotate button to the downloads player\n• Captions can now be turned on in Always Off mode\n\nFixed:\n• Tab settings ignored on YouTube's glass tab bar\n• Glass tab bar with icon-only tabs\n• St",
-          "downloadURL": "https://github.com/itzzace/ytkace/releases/download/v1.1.5/YTKACE_1.1.5_YouTube_21.44.4.ipa",
-          "size": 139496330
+          "version": "21.45.4",
+          "date": "2026-11-10",
+          "localizedDescription": "by @itzzace0\n\n1,000 stars 🎉\nThanks for 1k stars! To celebrate, FlareStore is sponsoring a giveaway of 5 certificates in the new YTKACE Telegram channel: https://t.me/ytkace\n\nWhat's new:\n• Updated to YouTube 21.45.4\n• Button Layout: drag the player buttons into YouTube's top row, the row under it, or next to the fullscreen button\n• Added a Quality Button that shows the current quality\n• Added Auto Fullscreen and Exit Fullscreen at End\n• Added Swipe to Seek\n• Added Previous/Next Skip\n• Added Keep ",
+          "downloadURL": "https://github.com/itzzace/ytkace/releases/download/v1.1.6/YTKACE_1.1.6_YouTube_21.45.4.ipa",
+          "size": 140301936
         }
       ]
     },
