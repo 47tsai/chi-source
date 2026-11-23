@@ -40,7 +40,7 @@
       "name": "YTKACE",
       "bundleIdentifier": "com.google.ios.youtube",
       "developerName": "itzzace",
-      "subtitle": "itzzace（2026-11-15）",
+      "subtitle": "itzzace（2026-11-22）",
       "localizedDescription": "An open-source YouTube enhancement for iOS.",
       "iconURL": "https://raw.githubusercontent.com/47tsai/chi-source/main/YT.png",
       "tintColor": "E8A8B7",
@@ -48,11 +48,11 @@
       "screenshots": [],
       "versions": [
         {
-          "version": "21.46.3",
-          "date": "2026-11-15",
-          "localizedDescription": "by @itzzace0\n\nThe FlareStore certificate giveaway is still going in the YTKACE Telegram channel: https://t.me/ytkace\n\nWhat's new:\n• Updated to YouTube 21.46.3\n• Added Return YouTube Dislike for videos, Shorts and the description panel\n• YTKACE and YouTube buttons can now be mixed in the top row and the fullscreen bar\n• Added a left button column, and every player button can now be edited in the layout editor\n• Added fullscreen bar button toggles\n• Added a compact Quality Button and quality setti",
-          "downloadURL": "https://github.com/itzzace/ytkace/releases/download/v1.1.8/YTKACE_1.1.8_YouTube_21.46.3.ipa",
-          "size": 141821255
+          "version": "21.47.6",
+          "date": "2026-11-22",
+          "localizedDescription": "by @itzzace0\n\nWhat's new:\n• Updated to YouTube 21.47.6\n• Action bar editor: reorder buttons and move ⋯ items into the bar\n• Added Remove AI Summaries\n• Added Avoid Notch Cutoff\n• Added an option to disable PiP from the miniplayer\n• Added a fullscreen orientation option, and vertical videos stay in portrait\n• Added the Open in YTKACE Safari extension\n• Remove Products now also hides product rows and cards in feeds, search and the iPad sidebar\n• Backups moved to their own page with last backup and",
+          "downloadURL": "https://github.com/itzzace/ytkace/releases/download/v1.1.9/YTKACE_1.1.9_YouTube_21.47.6.ipa",
+          "size": 143414110
         }
       ]
     },
